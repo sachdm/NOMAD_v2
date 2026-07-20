@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~/journal</title>
+<style>
+  :root {
+    --bg: #0c0f0d;
+    --fg: #c8e6c9;
+    --green: #4ade80;
+    --dim: #5b7360;
+    --amber: #fbbf24;
+    --cyan: #67e8f9;
+    --red: #f87171;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "SF Mono", "Menlo", "Monaco", "Fira Code", "Cascadia Code", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 12px;
+  }
+  /* subtle CRT scanlines */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 1px,
+      transparent 1px, transparent 3px);
+  }
+  #terminal {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-bottom: 40vh;
+  }
+  .line { white-space: pre-wrap; word-break: break-word; }
+  .prompt-user { color: var(--green); }
+  .prompt-path { color: var(--cyan); }
+  .dim   { color: var(--dim); }
+  .amber { color: var(--amber); }
+  .cyan  { color: var(--cyan); }
+  .red   { color: var(--red); }
+  .green { color: var(--green); }
+
+  .entry h1, .entry h2, .entry h3 { color: var(--amber); font-size: 14px; margin: 8px 0 2px; }
+  .entry h1::before { content: "# "; color: var(--dim); }
+  .entry h2::before { content: "## "; color: var(--dim); }
+  .entry h3::before { content: "### "; color: var(--dim); }
+  .entry p { margin: 6px 0; }
+  .entry ul { list-style: none; margin: 4px 0; }
+  .entry ul li::before { content: "  * "; color: var(--green); }
+  .entry blockquote { color: var(--dim); border-left: 2px solid var(--dim); padding-left: 10px; margin: 6px 0; font-style: italic; }
+  .entry code { background: #1a221c; color: var(--cyan); padding: 0 4px; border-radius: 3px; }
+  .entry strong { color: #fff; }
+  .entry em { color: var(--amber); }
+  .entry hr { border: none; border-top: 1px dashed var(--dim); margin: 10px 0; }
+
+  #input-line { display: flex; }
+  #cmd {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--fg);
+    font: inherit;
+    flex: 1;
+    caret-color: transparent;
+  }
+  #cursor {
+    display: inline-block;
+    width: 8px; height: 17px;
+    background: var(--green);
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+    position: relative;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  a { color: var(--cyan); }
+</style>
+</head>
+<body>
+<div id="terminal">
+  <div id="output"></div>
+  <div id="input-line" class="line">
+    <span><span class="prompt-user">lambo</span><span class="dim">@</span><span class="prompt-path">journal</span><span class="dim">:~$&nbsp;</span></span><span id="typed"></span><span id="cursor"></span>
+    <input id="cmd" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus>
+  </div>
+</div>
+
+<script>
+const output = document.getElementById('output');
+const cmd = document.getElementById('cmd');
+const typed = document.getElementById('typed');
+let entries = [];        // [{date, title, file}]
+let history = [];
+let histIdx = -1;
+
+// ---------- helpers ----------
+function esc(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function print(html, cls = '') {
+  const div = document.createElement('div');
+  div.className = 'line ' + cls;
+  div.innerHTML = html;
+  output.appendChild(div);
+}
+function printPrompt(text) {
+  print(`<span class="prompt-user">lambo</span><span class="dim">@</span><span class="prompt-path">journal</span><span class="dim">:~$</span> ${esc(text)}`);
+}
+function scrollBottom() { window.scrollTo(0, document.body.scrollHeight); }
+
+// tiny markdown renderer (headers, bold, italic, code, lists, quotes, hr)
+function md(src) {
+  const lines = src.split('\n');
+  let html = '', inList = false;
+  const inline = t => esc(t)
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  for (const raw of lines) {
+    const l = raw.trimEnd();
+    const li = l.match(/^[-*] (.*)/);
+    if (li) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      html += `<li>${inline(li[1])}</li>`;
+      continue;
+    }
+    if (inList) { html += '</ul>'; inList = false; }
+    if (/^---+$/.test(l)) { html += '<hr>'; continue; }
+    const h = l.match(/^(#{1,3}) (.*)/);
+    if (h) { html += `<h${h[1].length}>${inline(h[2])}</h${h[1].length}>`; continue; }
+    if (l.startsWith('> ')) { html += `<blockquote>${inline(l.slice(2))}</blockquote>`; continue; }
+    if (l === '') continue;
+    html += `<p>${inline(l)}</p>`;
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+
+// ---------- commands ----------
+const commands = {
+  help() {
+    print(`<span class="amber">available commands:</span>
+  <span class="green">ls</span>            list all journal entries
+  <span class="green">cat</span> &lt;date&gt;    read an entry, e.g. <span class="dim">cat 2026-07-20</span>
+  <span class="green">latest</span>        read the most recent entry
+  <span class="green">random</span>        read a random entry
+  <span class="green">grep</span> &lt;word&gt;   search entries by title
+  <span class="green">clear</span>         clear the screen
+  <span class="green">help</span>          show this message`);
+  },
+  ls() {
+    if (!entries.length) { print('no entries yet. add one to entries/ and entries.json', 'dim'); return; }
+    for (const e of [...entries].sort((a,b) => b.date.localeCompare(a.date))) {
+      print(`<span class="cyan">${e.date}</span>  ${esc(e.title)}`);
+    }
+    print(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'}`, 'dim');
+  },
+  async cat(arg) {
+    if (!arg) { print('usage: cat <date>   e.g. cat 2026-07-20', 'red'); return; }
+    const e = entries.find(x => x.date === arg || x.file === arg);
+    if (!e) { print(`cat: ${esc(arg)}: no such entry (try 'ls')`, 'red'); return; }
+    await showEntry(e);
+  },
+  async latest() {
+    if (!entries.length) { print('no entries yet.', 'dim'); return; }
+    const e = [...entries].sort((a,b) => b.date.localeCompare(a.date))[0];
+    await showEntry(e);
+  },
+  async random() {
+    if (!entries.length) { print('no entries yet.', 'dim'); return; }
+    await showEntry(entries[Math.floor(Math.random() * entries.length)]);
+  },
+  grep(arg) {
+    if (!arg) { print('usage: grep <word>', 'red'); return; }
+    const hits = entries.filter(e =>
+      e.title.toLowerCase().includes(arg.toLowerCase()) || e.date.includes(arg));
+    if (!hits.length) { print(`grep: no matches for '${esc(arg)}'`, 'dim'); return; }
+    for (const e of hits) print(`<span class="cyan">${e.date}</span>  ${esc(e.title)}`);
+  },
+  clear() { output.innerHTML = ''; },
+};
+
+async function showEntry(e) {
+  try {
+    const res = await fetch(`entries/${e.file}`);
+    if (!res.ok) throw new Error(res.status);
+    const text = await res.text();
+    print(`<span class="dim">--- ${e.date} ---</span>`);
+    const div = document.createElement('div');
+    div.className = 'entry';
+    div.innerHTML = md(text);
+    output.appendChild(div);
+    print(`<span class="dim">--- end ---</span>`);
+  } catch {
+    print(`error reading entries/${esc(e.file)}`, 'red');
+  }
+}
+
+async function run(input) {
+  printPrompt(input);
+  const [name, ...rest] = input.trim().split(/\s+/);
+  if (!name) return;
+  history.push(input); histIdx = history.length;
+  const fn = commands[name.toLowerCase()];
+  if (fn) await fn(rest.join(' '));
+  else print(`command not found: ${esc(name)} (try 'help')`, 'red');
+}
+
+// ---------- input handling ----------
+cmd.addEventListener('input', () => { typed.textContent = cmd.value; });
+cmd.addEventListener('keydown', async ev => {
+  if (ev.key === 'Enter') {
+    const v = cmd.value;
+    cmd.value = ''; typed.textContent = '';
+    await run(v);
+    scrollBottom();
+  } else if (ev.key === 'ArrowUp') {
+    ev.preventDefault();
+    if (histIdx > 0) { histIdx--; cmd.value = history[histIdx]; typed.textContent = cmd.value; }
+  } else if (ev.key === 'ArrowDown') {
+    ev.preventDefault();
+    if (histIdx < history.length - 1) { histIdx++; cmd.value = history[histIdx]; }
+    else { histIdx = history.length; cmd.value = ''; }
+    typed.textContent = cmd.value;
+  }
+});
+document.addEventListener('click', () => cmd.focus());
+
+// ---------- boot ----------
+(async function boot() {
+  print(`<span class="green">journal v1.0</span> <span class="dim">— a quiet place to write</span>`);
+  print('');
+  try {
+    const res = await fetch('entries.json');
+    entries = await res.json();
+    print(`loaded <span class="amber">${entries.length}</span> entr${entries.length === 1 ? 'y' : 'ies'}. type <span class="green">help</span> to get started, or <span class="green">latest</span> to read the newest.`);
+  } catch {
+    print(`couldn't load entries.json — if you opened this file directly, serve it instead:`, 'red');
+    print(`  python3 -m http.server`, 'dim');
+    print(`(it works automatically on GitHub Pages)`, 'dim');
+  }
+  print('');
+  cmd.focus();
+})();
+</script>
+</body>
+</html>
