@@ -1,3 +1,5 @@
 [
-  { "date": "2026-07-20", "title": "First entry", "file": "2026-07-20.md" }
+  { "date": "2026-07-20", "title": "First entry", "file": "2026-07-20.md", "category": "journal" },
+  { "date": "2026-07-20", "title": "Nomad — film concept", "file": "log-01.md", "category": "log" },
+  { "date": "2026-07-20", "title": "Scene #1 — Int. Office Space", "file": "log-02.md", "category": "script" }
 ]

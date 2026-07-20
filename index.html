@@ -61,6 +61,15 @@
   .entry em { color: var(--amber); }
   .entry hr { border: none; border-top: 1px dashed var(--dim); margin: 10px 0; }
 
+  /* script-category entries render like a screenplay */
+  .entry.script { max-width: 620px; margin: 0 auto; }
+  .entry.script h3 { text-align: center; color: #fff; margin-top: 14px; }
+  .entry.script h3::before { content: ""; }
+  .entry.script h2 { text-transform: uppercase; text-decoration: underline; }
+  .entry.script h2::before { content: ""; }
+  .entry.script p { margin: 4px 40px; }
+  .entry.script blockquote { text-align: center; border: none; }
+
   #input-line { display: flex; }
   #cmd {
     background: transparent;
@@ -149,23 +158,31 @@ const commands = {
   help() {
     print(`<span class="amber">available commands:</span>
   <span class="green">ls</span>            list all journal entries
-  <span class="green">cat</span> &lt;date&gt;    read an entry, e.g. <span class="dim">cat 2026-07-20</span>
+  <span class="green">ls</span> &lt;category&gt; list entries in a category, e.g. <span class="dim">ls script</span>
+  <span class="green">cat</span> &lt;entry&gt;   read an entry, e.g. <span class="dim">cat 2026-07-20</span> or <span class="dim">cat log-02</span>
   <span class="green">latest</span>        read the most recent entry
   <span class="green">random</span>        read a random entry
   <span class="green">grep</span> &lt;word&gt;   search entries by title
   <span class="green">clear</span>         clear the screen
   <span class="green">help</span>          show this message`);
   },
-  ls() {
+  ls(arg) {
     if (!entries.length) { print('no entries yet. add one to entries/ and entries.json', 'dim'); return; }
-    for (const e of [...entries].sort((a,b) => b.date.localeCompare(a.date))) {
-      print(`<span class="cyan">${e.date}</span>  ${esc(e.title)}`);
+    let list = [...entries].sort((a,b) => b.date.localeCompare(a.date));
+    if (arg) {
+      const q = arg.toLowerCase().replace(/s$/,'');
+      list = list.filter(e => (e.category || 'journal').toLowerCase().replace(/s$/,'') === q);
+      if (!list.length) { print(`ls: no entries in category '${esc(arg)}'`, 'dim'); return; }
     }
-    print(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'}`, 'dim');
+    for (const e of list) {
+      const tag = e.category ? `<span class="amber">[${esc(e.category)}]</span> ` : '';
+      print(`<span class="cyan">${e.date}</span>  <span class="dim">${e.file.replace(/\.md$/,'')}</span>  ${tag}${esc(e.title)}`);
+    }
+    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'}`, 'dim');
   },
   async cat(arg) {
-    if (!arg) { print('usage: cat <date>   e.g. cat 2026-07-20', 'red'); return; }
-    const e = entries.find(x => x.date === arg || x.file === arg);
+    if (!arg) { print('usage: cat <entry>   e.g. cat 2026-07-20 or cat log-02', 'red'); return; }
+    const e = entries.find(x => x.date === arg || x.file === arg || x.file === arg + '.md');
     if (!e) { print(`cat: ${esc(arg)}: no such entry (try 'ls')`, 'red'); return; }
     await showEntry(e);
   },
@@ -193,9 +210,9 @@ async function showEntry(e) {
     const res = await fetch(`entries/${e.file}`);
     if (!res.ok) throw new Error(res.status);
     const text = await res.text();
-    print(`<span class="dim">--- ${e.date} ---</span>`);
+    print(`<span class="dim">--- ${e.date}${e.category ? ' · ' + esc(e.category) : ''} ---</span>`);
     const div = document.createElement('div');
-    div.className = 'entry';
+    div.className = 'entry' + (e.category === 'script' ? ' script' : '');
     div.innerHTML = md(text);
     output.appendChild(div);
     print(`<span class="dim">--- end ---</span>`);
