@@ -80,6 +80,11 @@
     flex: 1;
     caret-color: transparent;
   }
+  .entry-link { cursor: pointer; display: block; padding: 1px 4px; margin-left: -4px; border-radius: 3px; }
+  .entry-link:hover { background: #1a221c; }
+  .entry-link:hover::after { content: "  ← read"; color: var(--dim); }
+  .back-link { cursor: pointer; color: var(--cyan); }
+  .back-link:hover { text-decoration: underline; }
   #cursor {
     display: inline-block;
     width: 8px; height: 17px;
@@ -176,9 +181,10 @@ const commands = {
     }
     for (const e of list) {
       const tag = e.category ? `<span class="amber">[${esc(e.category)}]</span> ` : '';
-      print(`<span class="cyan">${e.date}</span>  <span class="dim">${e.file.replace(/\.md$/,'')}</span>  ${tag}${esc(e.title)}`);
+      const slug = e.file.replace(/\.md$/,'');
+      print(`<span class="entry-link" data-cat="${esc(slug)}"><span class="cyan">${e.date}</span>  <span class="dim">${esc(slug)}</span>  ${tag}${esc(e.title)}</span>`);
     }
-    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'}`, 'dim');
+    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'} — click one to read it`, 'dim');
   },
   async cat(arg) {
     if (!arg) { print('usage: cat <entry>   e.g. cat 2026-07-20 or cat log-02', 'red'); return; }
@@ -215,7 +221,7 @@ async function showEntry(e) {
     div.className = 'entry' + (e.category === 'script' ? ' script' : '');
     div.innerHTML = md(text);
     output.appendChild(div);
-    print(`<span class="dim">--- end ---</span>`);
+    print(`<span class="dim">--- end ---</span>  <span class="back-link" data-ls="1">← back to entries</span>`);
   } catch {
     print(`error reading entries/${esc(e.file)}`, 'red');
   }
@@ -250,6 +256,12 @@ cmd.addEventListener('keydown', async ev => {
   }
 });
 document.addEventListener('click', () => cmd.focus());
+output.addEventListener('click', async e => {
+  const link = e.target.closest('[data-cat]');
+  if (link) { await run('cat ' + link.dataset.cat); scrollBottom(); return; }
+  const back = e.target.closest('[data-ls]');
+  if (back) { await run('ls'); scrollBottom(); }
+});
 
 // ---------- boot ----------
 (async function boot() {
@@ -258,7 +270,9 @@ document.addEventListener('click', () => cmd.focus());
   try {
     const res = await fetch('entries.json');
     entries = await res.json();
-    print(`loaded <span class="amber">${entries.length}</span> entr${entries.length === 1 ? 'y' : 'ies'}. type <span class="green">help</span> to get started, or <span class="green">latest</span> to read the newest.`);
+    print(`loaded <span class="amber">${entries.length}</span> entr${entries.length === 1 ? 'y' : 'ies'}. click one to read it, or type <span class="green">help</span> for commands.`);
+    print('');
+    commands.ls();
   } catch {
     print(`couldn't load entries.json — if you opened this file directly, serve it instead:`, 'red');
     print(`  python3 -m http.server`, 'dim');
