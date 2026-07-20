@@ -111,6 +111,7 @@ const output = document.getElementById('output');
 const cmd = document.getElementById('cmd');
 const typed = document.getElementById('typed');
 let entries = [];        // [{date, title, file}]
+let lastList = [];       // numbered list shown by ls, for "cat <number>"
 let history = [];
 let histIdx = -1;
 
@@ -164,7 +165,8 @@ const commands = {
     print(`<span class="amber">available commands:</span>
   <span class="green">ls</span>            list all journal entries
   <span class="green">ls</span> &lt;category&gt; list entries in a category, e.g. <span class="dim">ls script</span>
-  <span class="green">cat</span> &lt;entry&gt;   read an entry, e.g. <span class="dim">cat 2026-07-20</span> or <span class="dim">cat log-02</span>
+  <span class="green">cat</span> &lt;entry&gt;   read an entry by number, date, or name, e.g. <span class="dim">cat 1</span> or <span class="dim">cat log-02</span>
+  <span class="dim">(or just type the entry's number)</span>
   <span class="green">latest</span>        read the most recent entry
   <span class="green">random</span>        read a random entry
   <span class="green">grep</span> &lt;word&gt;   search entries by title
@@ -179,16 +181,23 @@ const commands = {
       list = list.filter(e => (e.category || 'journal').toLowerCase().replace(/s$/,'') === q);
       if (!list.length) { print(`ls: no entries in category '${esc(arg)}'`, 'dim'); return; }
     }
-    for (const e of list) {
+    lastList = list;
+    list.forEach((e, i) => {
       const tag = e.category ? `<span class="amber">[${esc(e.category)}]</span> ` : '';
       const slug = e.file.replace(/\.md$/,'');
-      print(`<span class="entry-link" data-cat="${esc(slug)}"><span class="cyan">${e.date}</span>  <span class="dim">${esc(slug)}</span>  ${tag}${esc(e.title)}</span>`);
-    }
-    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'} — click one to read it`, 'dim');
+      const num = String(i + 1).padStart(2, ' ');
+      print(`<span class="entry-link" data-cat="${esc(slug)}"><span class="green">${num}.</span> <span class="cyan">${e.date}</span>  ${tag}${esc(e.title)}</span>`);
+    });
+    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'} — click one, or type its number`, 'dim');
   },
   async cat(arg) {
-    if (!arg) { print('usage: cat <entry>   e.g. cat 2026-07-20 or cat log-02', 'red'); return; }
-    const e = entries.find(x => x.date === arg || x.file === arg || x.file === arg + '.md');
+    if (!arg) { print('usage: cat <number|date|name>   e.g. cat 1 or cat log-02', 'red'); return; }
+    let e;
+    if (/^\d+$/.test(arg)) {
+      const list = lastList.length ? lastList : [...entries].sort((a,b) => b.date.localeCompare(a.date));
+      e = list[parseInt(arg, 10) - 1];
+    }
+    if (!e) e = entries.find(x => x.date === arg || x.file === arg || x.file === arg + '.md');
     if (!e) { print(`cat: ${esc(arg)}: no such entry (try 'ls')`, 'red'); return; }
     await showEntry(e);
   },
@@ -217,11 +226,15 @@ async function showEntry(e) {
     if (!res.ok) throw new Error(res.status);
     const text = await res.text();
     print(`<span class="dim">--- ${e.date}${e.category ? ' · ' + esc(e.category) : ''} ---</span>`);
+    const header = output.lastElementChild;
     const div = document.createElement('div');
     div.className = 'entry' + (e.category === 'script' ? ' script' : '');
     div.innerHTML = md(text);
     output.appendChild(div);
     print(`<span class="dim">--- end ---</span>  <span class="back-link" data-ls="1">← back to entries</span>`);
+    location.hash = e.file.replace(/\.md$/,'');
+    // scroll to the START of the entry so it reads top-down
+    header.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } catch {
     print(`error reading entries/${esc(e.file)}`, 'red');
   }
@@ -232,6 +245,7 @@ async function run(input) {
   const [name, ...rest] = input.trim().split(/\s+/);
   if (!name) return;
   history.push(input); histIdx = history.length;
+  if (/^\d+$/.test(name)) { await commands.cat(name); return; }
   const fn = commands[name.toLowerCase()];
   if (fn) await fn(rest.join(' '));
   else print(`command not found: ${esc(name)} (try 'help')`, 'red');
@@ -258,7 +272,7 @@ cmd.addEventListener('keydown', async ev => {
 document.addEventListener('click', () => cmd.focus());
 output.addEventListener('click', async e => {
   const link = e.target.closest('[data-cat]');
-  if (link) { await run('cat ' + link.dataset.cat); scrollBottom(); return; }
+  if (link) { await run('cat ' + link.dataset.cat); return; }
   const back = e.target.closest('[data-ls]');
   if (back) { await run('ls'); scrollBottom(); }
 });
@@ -273,6 +287,12 @@ output.addEventListener('click', async e => {
     print(`loaded <span class="amber">${entries.length}</span> entr${entries.length === 1 ? 'y' : 'ies'}. click one to read it, or type <span class="green">help</span> for commands.`);
     print('');
     commands.ls();
+    // deep link: #log-01 opens that entry directly
+    const slug = decodeURIComponent(location.hash.slice(1));
+    if (slug) {
+      const e = entries.find(x => x.file === slug + '.md' || x.date === slug);
+      if (e) { print(''); await showEntry(e); }
+    }
   } catch {
     print(`couldn't load entries.json — if you opened this file directly, serve it instead:`, 'red');
     print(`  python3 -m http.server`, 'dim');
