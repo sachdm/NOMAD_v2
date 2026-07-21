@@ -186,8 +186,8 @@
 
 <script>
 const REPO = 'sachdm/NOMAD';
-const GROUP_ORDER = ['draft', 'dev', 'script', 'log', 'journal'];
-const GROUP_NAMES = { draft: 'working drafts', dev: 'development', script: 'scripts', log: 'logs', journal: 'journal' };
+const GROUP_ORDER = ['draft', 'dev', 'scene', 'log', 'journal', 'archive'];
+const GROUP_NAMES = { draft: 'working drafts', dev: 'development', scene: 'scenes', log: 'session logs', journal: 'journal', archive: 'archive — notebook' };
 
 let entries = [];
 let current = -1;
@@ -273,7 +273,7 @@ async function open(idx, push = true) {
         <a href="${editUrl}" target="_blank" rel="noopener">edit ✎</a>
         <a href="entries/${e.file}" target="_blank" rel="noopener">raw</a>
       </div>
-      <div class="entry${cat === 'script' ? ' script' : ''}">${md(text)}</div>
+      <div class="entry${cat === 'scene' || cat === 'script' ? ' script' : ''}">${md(text)}</div>
       <div id="prevnext">
         <span id="pn-prev">${entries[idx-1] ? '← ' + esc(entries[idx-1].title) : ''}</span>
         <span id="pn-next">${entries[idx+1] ? esc(entries[idx+1].title) + ' →' : ''}</span>

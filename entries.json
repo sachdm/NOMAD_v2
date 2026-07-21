@@ -1,10 +1,11 @@
 [
-  { "date": "2026-07-21", "title": "Act One — Working Script (0.2)", "file": "act-1.md", "category": "draft" },
-  { "date": "2026-07-21", "title": "Development: The Office", "file": "dev-office.md", "category": "dev" },
-  { "date": "2026-07-21", "title": "Development: Story Notes", "file": "dev-notes.md", "category": "dev" },
-  { "date": "2026-07-21", "title": "Beat Sheet — Cold Open: Cairns' Last Day", "file": "scene-cold-open.md", "category": "script" },
-  { "date": "2026-07-20", "title": "Scene #1 — Int. Office Space", "file": "log-02.md", "category": "script" },
-  { "date": "2026-07-21", "title": "Log 03 — Development: The Office", "file": "log-03.md", "category": "log" },
-  { "date": "2026-07-20", "title": "Log 01 — Nomad (film concept)", "file": "log-01.md", "category": "log" },
+  { "date": "2026-07-21", "title": "Act One — Working Script v0.2", "file": "act-1.md", "category": "draft" },
+  { "date": "2026-07-21", "title": "The Office — World & Erosion", "file": "dev-office.md", "category": "dev" },
+  { "date": "2026-07-21", "title": "Story — Structure & Open Questions", "file": "dev-notes.md", "category": "dev" },
+  { "date": "2026-07-21", "title": "Cold Open — Cairns' Last Day (beat sheet)", "file": "scene-cold-open.md", "category": "scene" },
+  { "date": "2026-07-21", "title": "Session — 2026-07-21: The Office", "file": "session-2026-07-21.md", "category": "log" },
+  { "date": "2026-07-20", "title": "Notebook — Log 01: Nomad concept", "file": "log-01.md", "category": "archive" },
+  { "date": "2026-07-20", "title": "Notebook — Log 02: Scene #1 (scripted)", "file": "log-02.md", "category": "archive" },
+  { "date": "2026-07-20", "title": "Notebook — Raw transcription (all pages)", "file": "notebook-raw.md", "category": "archive" },
   { "date": "2026-07-20", "title": "First entry", "file": "2026-07-20.md", "category": "journal" }
 ]
