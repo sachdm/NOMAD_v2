@@ -2,5 +2,6 @@
   { "date": "2026-07-20", "title": "First entry", "file": "2026-07-20.md", "category": "journal" },
   { "date": "2026-07-20", "title": "Nomad — film concept", "file": "log-01.md", "category": "log" },
   { "date": "2026-07-20", "title": "Scene #1 — Int. Office Space", "file": "log-02.md", "category": "script" },
-  { "date": "2026-07-20", "title": "Development: The Office", "file": "log-03.md", "category": "log" }
+  { "date": "2026-07-21", "title": "Development: The Office", "file": "log-03.md", "category": "log" },
+  { "date": "2026-07-21", "title": "Beat Sheet — Cold Open: Cairns' Last Day", "file": "scene-cold-open.md", "category": "script" }
 ]
