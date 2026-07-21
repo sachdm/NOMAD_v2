@@ -260,6 +260,17 @@ async function open(idx, push = true) {
   buildSidebar(search.value);
   if (push) history.replaceState(null, '', '#' + slugOf(e));
   reader.innerHTML = '<div style="color:var(--dim)">loading…</div>';
+  if (e.file.endsWith('.svg')) {
+    reader.innerHTML = `
+      <div id="meta">
+        <span>${e.date}</span>
+        <span class="tag">[${esc(e.category || 'map')}]</span>
+        <a href="entries/${e.file}" target="_blank" rel="noopener">open full size</a>
+      </div>
+      <img src="entries/${e.file}" alt="${esc(e.title)}" style="width:100%;border:1px solid #1e2a20;border-radius:6px;background:var(--bg)">`;
+    document.getElementById('content').scrollTop = 0;
+    return;
+  }
   try {
     const res = await fetch('entries/' + e.file);
     if (!res.ok) throw new Error(res.status);
