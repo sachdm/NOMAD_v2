@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>~/journal</title>
+<title>NOMAD — project</title>
 <style>
   :root {
     --bg: #0c0f0d;
+    --bg2: #10140f;
     --fg: #c8e6c9;
     --green: #4ade80;
     --dim: #5b7360;
     --amber: #fbbf24;
     --cyan: #67e8f9;
     --red: #f87171;
+    --hover: #1a221c;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; }
@@ -21,116 +23,183 @@
     color: var(--fg);
     font-family: "SF Mono", "Menlo", "Monaco", "Fira Code", "Cascadia Code", monospace;
     font-size: 14px;
-    line-height: 1.6;
-    padding: 12px;
+    line-height: 1.65;
   }
-  /* subtle CRT scanlines */
   body::after {
     content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: repeating-linear-gradient(
-      0deg, rgba(0,0,0,0.12) 0px, rgba(0,0,0,0.12) 1px,
-      transparent 1px, transparent 3px);
+    position: fixed; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.10) 0px, rgba(0,0,0,0.10) 1px, transparent 1px, transparent 3px);
   }
-  #terminal {
-    max-width: 860px;
-    margin: 0 auto;
-    padding-bottom: 40vh;
+
+  /* ---------- layout ---------- */
+  #app { display: flex; height: 100vh; }
+  #sidebar {
+    width: 300px; min-width: 300px;
+    background: var(--bg2);
+    border-right: 1px solid #1e2a20;
+    display: flex; flex-direction: column;
+    overflow-y: auto;
   }
-  .line { white-space: pre-wrap; word-break: break-word; }
-  .prompt-user { color: var(--green); }
-  .prompt-path { color: var(--cyan); }
-  .dim   { color: var(--dim); }
-  .amber { color: var(--amber); }
-  .cyan  { color: var(--cyan); }
-  .red   { color: var(--red); }
-  .green { color: var(--green); }
-
-  .entry h1, .entry h2, .entry h3 { color: var(--amber); font-size: 14px; margin: 8px 0 2px; }
-  .entry h1::before { content: "# "; color: var(--dim); }
-  .entry h2::before { content: "## "; color: var(--dim); }
-  .entry h3::before { content: "### "; color: var(--dim); }
-  .entry p { margin: 6px 0; }
-  .entry ul { list-style: none; margin: 4px 0; }
-  .entry ul li::before { content: "  * "; color: var(--green); }
-  .entry blockquote { color: var(--dim); border-left: 2px solid var(--dim); padding-left: 10px; margin: 6px 0; font-style: italic; }
-  .entry code { background: #1a221c; color: var(--cyan); padding: 0 4px; border-radius: 3px; }
-  .entry strong { color: #fff; }
-  .entry em { color: var(--amber); }
-  .entry hr { border: none; border-top: 1px dashed var(--dim); margin: 10px 0; }
-
-  /* script-category entries render like a screenplay */
-  .entry.script { max-width: 620px; margin: 0 auto; }
-  .entry.script h3 { text-align: center; color: #fff; margin-top: 14px; }
-  .entry.script h3::before { content: ""; }
-  .entry.script h2 { text-transform: uppercase; text-decoration: underline; }
-  .entry.script h2::before { content: ""; }
-  .entry.script p { margin: 4px 40px; }
-  .entry.script blockquote { text-align: center; border: none; }
-
-  #input-line { display: flex; }
-  #cmd {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--fg);
-    font: inherit;
-    flex: 1;
-    caret-color: transparent;
+  #content {
+    flex: 1; overflow-y: auto;
+    padding: 28px 40px 30vh;
   }
-  .entry-link { cursor: pointer; display: block; padding: 1px 4px; margin-left: -4px; border-radius: 3px; }
-  .entry-link:hover { background: #1a221c; }
-  .entry-link:hover::after { content: "  ← read"; color: var(--dim); }
-  .back-link { cursor: pointer; color: var(--cyan); }
-  .back-link:hover { text-decoration: underline; }
+  #reader { max-width: 740px; margin: 0 auto; }
+
+  /* ---------- sidebar ---------- */
+  #brand {
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid #1e2a20;
+  }
+  #brand .prompt { color: var(--green); }
+  #brand .at { color: var(--dim); }
+  #brand .path { color: var(--cyan); }
   #cursor {
-    display: inline-block;
-    width: 8px; height: 17px;
-    background: var(--green);
-    vertical-align: text-bottom;
+    display: inline-block; width: 8px; height: 15px;
+    background: var(--green); vertical-align: text-bottom;
     animation: blink 1s steps(1) infinite;
-    position: relative;
   }
   @keyframes blink { 50% { opacity: 0; } }
-  a { color: var(--cyan); }
+  #brand .sub { color: var(--dim); font-size: 12px; margin-top: 2px; }
+
+  #searchwrap { padding: 10px 16px; border-bottom: 1px solid #1e2a20; }
+  #search {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid #223026;
+    border-radius: 4px;
+    color: var(--fg);
+    font: inherit;
+    padding: 6px 9px;
+    outline: none;
+  }
+  #search:focus { border-color: var(--green); }
+  #search::placeholder { color: var(--dim); }
+
+  #nav { flex: 1; padding: 8px 0 24px; }
+  .group-label {
+    padding: 14px 16px 4px;
+    color: var(--amber);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .group-label .count { color: var(--dim); letter-spacing: 0; }
+  .nav-item {
+    display: block;
+    padding: 6px 16px 6px 22px;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .nav-item:hover { background: var(--hover); }
+  .nav-item.active { background: var(--hover); border-left-color: var(--green); }
+  .nav-item .t { display: block; }
+  .nav-item .d { display: block; color: var(--dim); font-size: 11px; }
+  #empty-note { padding: 12px 16px; color: var(--dim); font-size: 12px; }
+
+  #sidebar-foot {
+    padding: 12px 16px;
+    border-top: 1px solid #1e2a20;
+    color: var(--dim); font-size: 11px;
+  }
+  #sidebar-foot a { color: var(--cyan); text-decoration: none; }
+  #sidebar-foot a:hover { text-decoration: underline; }
+
+  /* ---------- reader ---------- */
+  #meta {
+    color: var(--dim); font-size: 12px;
+    display: flex; gap: 14px; align-items: center;
+    margin-bottom: 18px; flex-wrap: wrap;
+  }
+  #meta .tag { color: var(--amber); }
+  #meta a { color: var(--cyan); text-decoration: none; }
+  #meta a:hover { text-decoration: underline; }
+  #prevnext { display: flex; justify-content: space-between; margin-top: 40px; color: var(--dim); font-size: 13px; }
+  #prevnext span { cursor: pointer; color: var(--cyan); }
+  #prevnext span:hover { text-decoration: underline; }
+
+  .entry h1 { color: var(--green); font-size: 19px; margin: 4px 0 16px; }
+  .entry h2 { color: var(--amber); font-size: 15px; margin: 26px 0 8px; }
+  .entry h3 { color: var(--amber); font-size: 14px; margin: 18px 0 4px; }
+  .entry p { margin: 10px 0; }
+  .entry ul { list-style: none; margin: 8px 0; }
+  .entry ul li { margin: 4px 0; }
+  .entry ul li::before { content: "* "; color: var(--green); }
+  .entry blockquote { color: var(--dim); border-left: 2px solid var(--dim); padding-left: 12px; margin: 10px 0; font-style: italic; }
+  .entry code { background: var(--hover); color: var(--cyan); padding: 0 4px; border-radius: 3px; }
+  .entry strong { color: #fff; }
+  .entry em { color: var(--amber); }
+  .entry hr { border: none; border-top: 1px dashed var(--dim); margin: 22px 0; }
+  .entry a { color: var(--cyan); }
+  .entry del { color: var(--dim); }
+
+  /* screenplay rendering for script entries */
+  .entry.script { max-width: 640px; }
+  .entry.script h2 { text-transform: uppercase; text-decoration: underline; color: var(--fg); }
+  .entry.script h3 { text-align: center; color: #fff; margin-top: 20px; }
+  .entry.script p { margin: 6px 36px; }
+  .entry.script blockquote { text-align: center; border: none; }
+
+  #welcome { color: var(--dim); margin-top: 10vh; text-align: center; }
+  #welcome .big { color: var(--green); font-size: 18px; }
+
+  kbd {
+    background: var(--hover); border: 1px solid #2a3a2e; border-radius: 3px;
+    padding: 0 5px; font: inherit; font-size: 11px; color: var(--fg);
+  }
+
+  /* ---------- mobile ---------- */
+  @media (max-width: 760px) {
+    #app { flex-direction: column; height: auto; }
+    #sidebar { width: 100%; min-width: 0; max-height: 45vh; border-right: none; border-bottom: 1px solid #1e2a20; }
+    #content { padding: 20px 16px 20vh; }
+  }
 </style>
 </head>
 <body>
-<div id="terminal">
-  <div id="output"></div>
-  <div id="input-line" class="line">
-    <span><span class="prompt-user">lambo</span><span class="dim">@</span><span class="prompt-path">journal</span><span class="dim">:~$&nbsp;</span></span><span id="typed"></span><span id="cursor"></span>
-    <input id="cmd" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus>
+<div id="app">
+  <div id="sidebar">
+    <div id="brand">
+      <div><span class="prompt">lambo</span><span class="at">@</span><span class="path">nomad</span><span class="at">:~$</span> <span id="cursor"></span></div>
+      <div class="sub">a film about the erosion</div>
+    </div>
+    <div id="searchwrap">
+      <input id="search" placeholder="filter... ( / )" autocomplete="off" spellcheck="false">
+    </div>
+    <div id="nav"></div>
+    <div id="sidebar-foot">
+      <div><kbd>j</kbd>/<kbd>k</kbd> next/prev · <kbd>/</kbd> search</div>
+      <div style="margin-top:4px"><a id="new-entry-link" target="_blank" rel="noopener">+ new entry</a> · <a id="repo-link" target="_blank" rel="noopener">repo</a></div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="reader">
+      <div id="welcome">
+        <div class="big">NOMAD</div>
+        <div>select an entry — or press <kbd>j</kbd></div>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
-const output = document.getElementById('output');
-const cmd = document.getElementById('cmd');
-const typed = document.getElementById('typed');
-let entries = [];        // [{date, title, file}]
-let lastList = [];       // numbered list shown by ls, for "cat <number>"
-let history = [];
-let histIdx = -1;
+const REPO = 'sachdm/NOMAD';
+const GROUP_ORDER = ['draft', 'dev', 'script', 'log', 'journal'];
+const GROUP_NAMES = { draft: 'working drafts', dev: 'development', script: 'scripts', log: 'logs', journal: 'journal' };
 
-// ---------- helpers ----------
-function esc(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
-function print(html, cls = '') {
-  const div = document.createElement('div');
-  div.className = 'line ' + cls;
-  div.innerHTML = html;
-  output.appendChild(div);
-}
-function printPrompt(text) {
-  print(`<span class="prompt-user">lambo</span><span class="dim">@</span><span class="prompt-path">journal</span><span class="dim">:~$</span> ${esc(text)}`);
-}
-function scrollBottom() { window.scrollTo(0, document.body.scrollHeight); }
+let entries = [];
+let current = -1;
+const nav = document.getElementById('nav');
+const reader = document.getElementById('reader');
+const search = document.getElementById('search');
 
-// tiny markdown renderer (headers, bold, italic, code, lists, quotes, hr)
+document.getElementById('repo-link').href = `https://github.com/${REPO}`;
+document.getElementById('new-entry-link').href = `https://github.com/${REPO}/new/main/entries`;
+
+function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 function md(src) {
   const lines = src.split('\n');
   let html = '', inList = false;
@@ -138,15 +207,12 @@ function md(src) {
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+    .replace(/~~([^~]+)~~/g, '<del>$1</del>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
   for (const raw of lines) {
     const l = raw.trimEnd();
     const li = l.match(/^[-*] (.*)/);
-    if (li) {
-      if (!inList) { html += '<ul>'; inList = true; }
-      html += `<li>${inline(li[1])}</li>`;
-      continue;
-    }
+    if (li) { if (!inList) { html += '<ul>'; inList = true; } html += `<li>${inline(li[1])}</li>`; continue; }
     if (inList) { html += '</ul>'; inList = false; }
     if (/^---+$/.test(l)) { html += '<hr>'; continue; }
     const h = l.match(/^(#{1,3}) (.*)/);
@@ -159,147 +225,106 @@ function md(src) {
   return html;
 }
 
-// ---------- commands ----------
-const commands = {
-  help() {
-    print(`<span class="amber">available commands:</span>
-  <span class="green">ls</span>            list all journal entries
-  <span class="green">ls</span> &lt;category&gt; list entries in a category, e.g. <span class="dim">ls script</span>
-  <span class="green">cat</span> &lt;entry&gt;   read an entry by number, date, or name, e.g. <span class="dim">cat 1</span> or <span class="dim">cat log-02</span>
-  <span class="dim">(or just type the entry's number)</span>
-  <span class="green">latest</span>        read the most recent entry
-  <span class="green">random</span>        read a random entry
-  <span class="green">grep</span> &lt;word&gt;   search entries by title
-  <span class="green">clear</span>         clear the screen
-  <span class="green">help</span>          show this message`);
-  },
-  ls(arg) {
-    if (!entries.length) { print('no entries yet. add one to entries/ and entries.json', 'dim'); return; }
-    let list = [...entries].sort((a,b) => b.date.localeCompare(a.date));
-    if (arg) {
-      const q = arg.toLowerCase().replace(/s$/,'');
-      list = list.filter(e => (e.category || 'journal').toLowerCase().replace(/s$/,'') === q);
-      if (!list.length) { print(`ls: no entries in category '${esc(arg)}'`, 'dim'); return; }
-    }
-    lastList = list;
-    list.forEach((e, i) => {
-      const tag = e.category ? `<span class="amber">[${esc(e.category)}]</span> ` : '';
-      const slug = e.file.replace(/\.md$/,'');
-      const num = String(i + 1).padStart(2, ' ');
-      print(`<span class="entry-link" data-cat="${esc(slug)}"><span class="green">${num}.</span> <span class="cyan">${e.date}</span>  ${tag}${esc(e.title)}</span>`);
-    });
-    print(`${list.length} entr${list.length === 1 ? 'y' : 'ies'} — click one, or type its number`, 'dim');
-  },
-  async cat(arg) {
-    if (!arg) { print('usage: cat <number|date|name>   e.g. cat 1 or cat log-02', 'red'); return; }
-    let e;
-    if (/^\d+$/.test(arg)) {
-      const list = lastList.length ? lastList : [...entries].sort((a,b) => b.date.localeCompare(a.date));
-      e = list[parseInt(arg, 10) - 1];
-    }
-    if (!e) e = entries.find(x => x.date === arg || x.file === arg || x.file === arg + '.md');
-    if (!e) { print(`cat: ${esc(arg)}: no such entry (try 'ls')`, 'red'); return; }
-    await showEntry(e);
-  },
-  async latest() {
-    if (!entries.length) { print('no entries yet.', 'dim'); return; }
-    const e = [...entries].sort((a,b) => b.date.localeCompare(a.date))[0];
-    await showEntry(e);
-  },
-  async random() {
-    if (!entries.length) { print('no entries yet.', 'dim'); return; }
-    await showEntry(entries[Math.floor(Math.random() * entries.length)]);
-  },
-  grep(arg) {
-    if (!arg) { print('usage: grep <word>', 'red'); return; }
-    const hits = entries.filter(e =>
-      e.title.toLowerCase().includes(arg.toLowerCase()) || e.date.includes(arg));
-    if (!hits.length) { print(`grep: no matches for '${esc(arg)}'`, 'dim'); return; }
-    for (const e of hits) print(`<span class="cyan">${e.date}</span>  ${esc(e.title)}`);
-  },
-  clear() { output.innerHTML = ''; },
-};
+function slugOf(e) { return e.file.replace(/\.md$/, ''); }
 
-async function showEntry(e) {
+function buildSidebar(filter = '') {
+  const q = filter.toLowerCase();
+  nav.innerHTML = '';
+  let shown = 0;
+  for (const cat of GROUP_ORDER) {
+    const group = entries.filter(e => (e.category || 'journal') === cat)
+      .filter(e => !q || e.title.toLowerCase().includes(q) || e.date.includes(q) || slugOf(e).includes(q));
+    if (!group.length) continue;
+    const label = document.createElement('div');
+    label.className = 'group-label';
+    label.innerHTML = `${GROUP_NAMES[cat] || cat} <span class="count">(${group.length})</span>`;
+    nav.appendChild(label);
+    for (const e of group) {
+      const idx = entries.indexOf(e);
+      const a = document.createElement('a');
+      a.className = 'nav-item' + (idx === current ? ' active' : '');
+      a.href = '#' + slugOf(e);
+      a.dataset.idx = idx;
+      a.innerHTML = `<span class="t">${esc(e.title)}</span><span class="d">${e.date}</span>`;
+      nav.appendChild(a);
+      shown++;
+    }
+  }
+  if (!shown) nav.innerHTML = '<div id="empty-note">no matches</div>';
+}
+
+async function open(idx, push = true) {
+  const e = entries[idx];
+  if (!e) return;
+  current = idx;
+  buildSidebar(search.value);
+  if (push) history.replaceState(null, '', '#' + slugOf(e));
+  reader.innerHTML = '<div style="color:var(--dim)">loading…</div>';
   try {
-    const res = await fetch(`entries/${e.file}`);
+    const res = await fetch('entries/' + e.file);
     if (!res.ok) throw new Error(res.status);
     const text = await res.text();
-    print(`<span class="dim">--- ${e.date}${e.category ? ' · ' + esc(e.category) : ''} ---</span>`);
-    const header = output.lastElementChild;
-    const div = document.createElement('div');
-    div.className = 'entry' + (e.category === 'script' ? ' script' : '');
-    div.innerHTML = md(text);
-    output.appendChild(div);
-    print(`<span class="dim">--- end ---</span>  <span class="back-link" data-ls="1">← back to entries</span>`);
-    location.hash = e.file.replace(/\.md$/,'');
-    // scroll to the START of the entry so it reads top-down
-    header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const cat = e.category || 'journal';
+    const editUrl = `https://github.com/${REPO}/edit/main/entries/${e.file}`;
+    reader.innerHTML = `
+      <div id="meta">
+        <span>${e.date}</span>
+        <span class="tag">[${esc(cat)}]</span>
+        <a href="${editUrl}" target="_blank" rel="noopener">edit ✎</a>
+        <a href="entries/${e.file}" target="_blank" rel="noopener">raw</a>
+      </div>
+      <div class="entry${cat === 'script' ? ' script' : ''}">${md(text)}</div>
+      <div id="prevnext">
+        <span id="pn-prev">${entries[idx-1] ? '← ' + esc(entries[idx-1].title) : ''}</span>
+        <span id="pn-next">${entries[idx+1] ? esc(entries[idx+1].title) + ' →' : ''}</span>
+      </div>`;
+    document.getElementById('content').scrollTop = 0;
+    const prev = document.getElementById('pn-prev'), next = document.getElementById('pn-next');
+    if (prev) prev.onclick = () => open(idx - 1);
+    if (next) next.onclick = () => open(idx + 1);
   } catch {
-    print(`error reading entries/${esc(e.file)}`, 'red');
+    reader.innerHTML = `<div style="color:var(--red)">error reading entries/${esc(e.file)}</div>`;
   }
 }
 
-async function run(input) {
-  printPrompt(input);
-  const [name, ...rest] = input.trim().split(/\s+/);
-  if (!name) return;
-  history.push(input); histIdx = history.length;
-  if (/^\d+$/.test(name)) { await commands.cat(name); return; }
-  const fn = commands[name.toLowerCase()];
-  if (fn) await fn(rest.join(' '));
-  else print(`command not found: ${esc(name)} (try 'help')`, 'red');
-}
-
-// ---------- input handling ----------
-cmd.addEventListener('input', () => { typed.textContent = cmd.value; });
-cmd.addEventListener('keydown', async ev => {
-  if (ev.key === 'Enter') {
-    const v = cmd.value;
-    cmd.value = ''; typed.textContent = '';
-    await run(v);
-    scrollBottom();
-  } else if (ev.key === 'ArrowUp') {
-    ev.preventDefault();
-    if (histIdx > 0) { histIdx--; cmd.value = history[histIdx]; typed.textContent = cmd.value; }
-  } else if (ev.key === 'ArrowDown') {
-    ev.preventDefault();
-    if (histIdx < history.length - 1) { histIdx++; cmd.value = history[histIdx]; }
-    else { histIdx = history.length; cmd.value = ''; }
-    typed.textContent = cmd.value;
+document.addEventListener('keydown', ev => {
+  if (ev.target === search) {
+    if (ev.key === 'Escape') search.blur();
+    return;
   }
-});
-document.addEventListener('click', () => cmd.focus());
-output.addEventListener('click', async e => {
-  const link = e.target.closest('[data-cat]');
-  if (link) { await run('cat ' + link.dataset.cat); return; }
-  const back = e.target.closest('[data-ls]');
-  if (back) { await run('ls'); scrollBottom(); }
+  if (ev.key === '/') { ev.preventDefault(); search.focus(); search.select(); }
+  else if (ev.key === 'j' || ev.key === 'ArrowDown') { ev.preventDefault(); open(Math.min(current + 1, entries.length - 1)); }
+  else if (ev.key === 'k' || ev.key === 'ArrowUp') { ev.preventDefault(); open(Math.max(current - 1, 0)); }
 });
 
-// ---------- boot ----------
+search.addEventListener('input', () => buildSidebar(search.value));
+
+nav.addEventListener('click', ev => {
+  const item = ev.target.closest('.nav-item');
+  if (!item) return;
+  ev.preventDefault();
+  open(parseInt(item.dataset.idx, 10));
+});
+
 (async function boot() {
-  print(`<span class="green">journal v1.0</span> <span class="dim">— a quiet place to write</span>`);
-  print('');
   try {
     const res = await fetch('entries.json');
-    entries = await res.json();
-    print(`loaded <span class="amber">${entries.length}</span> entr${entries.length === 1 ? 'y' : 'ies'}. click one to read it, or type <span class="green">help</span> for commands.`);
-    print('');
-    commands.ls();
-    // deep link: #log-01 opens that entry directly
-    const slug = decodeURIComponent(location.hash.slice(1));
-    if (slug) {
-      const e = entries.find(x => x.file === slug + '.md' || x.date === slug);
-      if (e) { print(''); await showEntry(e); }
+    const raw = await res.json();
+    const sorted = [];
+    for (const cat of GROUP_ORDER) {
+      sorted.push(...raw.filter(e => (e.category || 'journal') === cat)
+        .sort((a, b) => b.date.localeCompare(a.date)));
     }
+    sorted.push(...raw.filter(e => !GROUP_ORDER.includes(e.category || 'journal')));
+    entries = sorted;
+    buildSidebar();
+    const slug = decodeURIComponent(location.hash.slice(1));
+    const idx = entries.findIndex(e => slugOf(e) === slug || e.date === slug);
+    if (idx >= 0) open(idx, false);
+    else if (entries.length) open(0, false);
   } catch {
-    print(`couldn't load entries.json — if you opened this file directly, serve it instead:`, 'red');
-    print(`  python3 -m http.server`, 'dim');
-    print(`(it works automatically on GitHub Pages)`, 'dim');
+    reader.innerHTML = `<div style="color:var(--red)">couldn't load entries.json — if opened as a local file, run:<br><span style="color:var(--dim)">python3 -m http.server</span></div>`;
   }
-  print('');
-  cmd.focus();
 })();
 </script>
 </body>
