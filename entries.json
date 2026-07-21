@@ -1,5 +1,6 @@
 [
-  { "date": "2026-07-21", "title": "The Short — Blocked Script v0.1", "file": "short-script.md", "category": "draft" },
+  { "date": "2026-07-21", "title": "NOMAD — MASTER DRAFT (v0.3)", "file": "master.md", "category": "master" },
+  { "date": "2026-07-21", "title": "The Short — blocking notes (superseded)", "file": "short-script.md", "category": "draft" },
   { "date": "2026-07-21", "title": "Act Two — Working Script v0.1", "file": "act-2.md", "category": "draft" },
   { "date": "2026-07-21", "title": "Act One — Working Script v0.2", "file": "act-1.md", "category": "draft" },
   { "date": "2026-07-21", "title": "Story Mind Map", "file": "mindmap.svg", "category": "dev" },
