@@ -135,12 +135,40 @@
   .entry a { color: var(--cyan); }
   .entry del { color: var(--dim); }
 
-  /* screenplay rendering for script entries */
-  .entry.script { max-width: 640px; }
-  .entry.script h2 { text-transform: uppercase; text-decoration: underline; color: var(--fg); }
-  .entry.script h3 { text-align: center; color: #fff; margin-top: 20px; }
-  .entry.script p { margin: 6px 36px; }
-  .entry.script blockquote { text-align: center; border: none; }
+  /* screenplay rendering — Celtx-style */
+  .entry.script { max-width: 620px; font-family: "Courier Prime", "Courier New", Courier, monospace; }
+  .entry.script p { margin: 12px 0; }
+  h2.slug {
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin: 30px 0 12px !important;
+  }
+  .dialog {
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    max-width: 40ch;
+    margin: 16px auto;
+  }
+  .dialog h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal;
+    margin: 0 0 1px !important;
+  }
+  .dialog h3 em { color: var(--dim); text-transform: none; }
+  .dialog p { margin: 0 0 2px !important; color: var(--fg); }
+  .dialog p.paren {
+    text-align: center;
+    max-width: 30ch;
+    margin: 0 auto 2px !important;
+  }
+  .dialog p.paren em { color: var(--dim); }
+  .dialog blockquote { text-align: center; border: none; font-style: normal; color: var(--fg); padding: 0; }
 
   #welcome { color: var(--dim); margin-top: 10vh; text-align: center; }
   #welcome .big { color: var(--green); font-size: 18px; }
@@ -227,6 +255,28 @@ function md(src) {
 
 function slugOf(e) { return e.file.replace(/\.md$/, ''); }
 
+// Celtx-style screenplay transform: slugline h2s + character-cue h3 dialogue blocks
+function screenplayify(container) {
+  if (!container) return;
+  container.querySelectorAll('h2').forEach(h => {
+    if (/^(INT|EXT|INT\/EXT)[.\s]/i.test(h.textContent.trim())) h.classList.add('slug');
+  });
+  container.querySelectorAll('h3').forEach(h => {
+    const block = [];
+    let n = h.nextElementSibling;
+    while (n && (n.tagName === 'P' || n.tagName === 'BLOCKQUOTE')) { block.push(n); n = n.nextElementSibling; }
+    if (!block.length) return;
+    const div = document.createElement('div');
+    div.className = 'dialog';
+    h.parentNode.insertBefore(div, h);
+    div.appendChild(h);
+    for (const el of block) {
+      if (el.tagName === 'P' && /^<em>[^<]*<\/em>$/.test(el.innerHTML.trim())) el.classList.add('paren');
+      div.appendChild(el);
+    }
+  });
+}
+
 function buildSidebar(filter = '') {
   const q = filter.toLowerCase();
   nav.innerHTML = '';
@@ -289,6 +339,7 @@ async function open(idx, push = true) {
         <span id="pn-prev">${entries[idx-1] ? '← ' + esc(entries[idx-1].title) : ''}</span>
         <span id="pn-next">${entries[idx+1] ? esc(entries[idx+1].title) + ' →' : ''}</span>
       </div>`;
+    screenplayify(reader.querySelector('.entry'));
     document.getElementById('content').scrollTop = 0;
     const prev = document.getElementById('pn-prev'), next = document.getElementById('pn-next');
     if (prev) prev.onclick = () => open(idx - 1);
