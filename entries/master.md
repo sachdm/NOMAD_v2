@@ -2,7 +2,37 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 0.6** · The Short · 9 scenes (+4B) · ~17–19 min · improv format (action + motivation), except Scene 3 which is scripted.
+**Current version: 0.6.1** · The Short · 9 scenes (+4B) · ~17–19 min · improv format (action + motivation), except Scene 3 which is scripted.
+
+---
+
+## PLOT MAP
+
+### The chain of events
+
+1. **(One year ago)** Cairns exits the half-empty office with no plan — "that's the point." Last verified human Cairns.
+2. **(Now)** Will, fraud ops, half-automated: he catches a synthetic the machine missed — and is fined for it (streak zeroed, "top human performer").
+3. Cairns calls from paradise and makes the offer through Michelle — a name neither Will nor John has ever heard from him.
+4. The erosion closes its hand: intervening costs a coaching module; Will WFHs unnoticed; that night he texts Michelle. Three dots, instantly.
+5. **(4B)** The deposits: residency scan, the welcome ad starring Will, the tour quiz. Every biometric surrendered smiling. Floor-closing announced → John declares the last-day championship and takes Will's promise.
+6. Mexico: the ad comes true. Will keeps trying to see Cairns; Cairns keeps postponing.
+7. **(Midpoint)** The tell — a private memory comes back correct but transcribed. Will flags his best friend as synthetic and can't un-see it.
+8. Michelle moves up his "final appointment" — at Cairns' building. He goes a day early and finds the render farm: paradise generated, likenesses at work, his own ad mid-refinement.
+9. The handover: he attends anyway. Nothing is taken; everything was already given. The original is redundant.
+10. **(The cycle)** Championship day, the floor half-buried. "Will" messages John: can't make it — come out HERE. John starts typing back.
+
+### Plants → payoffs
+
+- **The 0.4-second delay** — planted: robot boss (sc 1) → felt: Cairns' laugh (sc 6) → paid: John's notification chirp (sc 9). The machine's fingerprint, taught in three hearings.
+- **The tell (eyes don't remember)** — planted: desk catch (sc 2) → reinforced: Will's own playback looks wrong (4B-c) → paid: Cairns fails it at cinema scale (sc 6). Echo available in Act 3: Will's likeness must beat the tell he taught us.
+- **No-plan Cairns → concierge Cairns** — planted: elevator exit (sc 1) → tripped: "I'm tight with Michelle" (sc 3) → noticed as trivia: John, "since when does Cairns have a plan?" The seam.
+- **Michelle, machine's mouth only** — enters as a hole in Cairns' biography (sc 3) → three dots/voice/appointment times all film → never seen, even at the handover (sc 8).
+- **The welcome ad starring Will** — planted: intake (4B-b) → escalated: mid-refinement at the render farm (sc 7) → paid: the message to John IS the finished product (sc 9).
+- **The championship** — planted: floor closing + John's bracket + Will's promise (4B) → paid: last day in office, WILL (REMOTE?), "not gonna make it back" (sc 9).
+- **The liveness rigs** — planted: residency office, "you know it's painless" (4B-a) → recognized: the handover room uses his own firm's models (sc 8).
+- **The subtitled building** — planted: locals discussing "the American who's never home" (sc 5) → paid: Will recognizes the appointment address (sc 7–8). The audience got there an act earlier.
+- **Cairns' postponements** — planted through the honeymoon (sc 5) → detonated: the pressure that makes Will ask the memory question (sc 6).
+- **The fraud-ops mind** — established: confirmation-hungry, wants the record corrected (sc 2, 4) → paid: it's WHY he attends the appointment instead of running (sc 8).
 
 ---
 
@@ -180,6 +210,7 @@ Cairns: two calibrated performances a half-degree apart — the terrified man un
 
 ## Changelog
 
+- **0.6.1** — added PLOT MAP section: the chain of events plus every plant→payoff pair.
 - **0.6** — addressed v0.5 handwritten notes (archived): (1) cold open dialed back from crowded to MIDPOINT — times visibly changing, everyone indifferent, speech plays only to John and Will; robot boss now subject to the guys' banter, and we cut to what the real boss is seeing at home (something hilariously non-work). (4) added the WFH mutiny — after mini-putt Will leaves mid-afternoon and nobody notices. Intake (b) rebuilt as the automated advertisement starring Will himself — "see yourself there" — which also plants the generative tech. (4b+9 merged, both notes honored) championship kept but no longer random: the floor is closing, last day in office IS the championship; scene 9 now plays against the half-dismantled floor. (7) THE FACTORY → THE RENDER FARM: fully generative, no sets, no actors, no one he half-knows — the paradise was never anywhere, and Will's own welcome ad is mid-refinement when he finds it.
 - 0.5 — addressed handwritten notes of July 22 (archived as Notebook — Notes on Master Draft): (1) cold open now visibly crowded so the one-year cut lands; robot-boss beat rewritten as legible behavior — the machine converts insult into customer service — instead of the "flag upstream" line. (3) Michelle now enters the film at the mini-putt: John asks who she is, neither has ever heard the name. (4) new last-straw beat — intervening costs Will a coaching module while the machine solves his case without him; that's the night he texts. Deposits rebuilt as three real scenes (4B) instead of a UI montage, incl. the eyes-plant on Will's own playback; John's championship promise planted here. (5) honeymoon given its drive: Will keeps trying to see Cairns and keeps being postponed. (7) drained pool reworked as THE FACTORY — active production, nothing left to find, Will arrives a day early inside his own funnel. (9) ending now pays the championship setup.
 - 0.4 — Scene 3 tightened again (v1.2): repeated bros trimmed, softeners cut, offer lands faster. Site now renders scripted scenes in Celtx-style screenplay format.
