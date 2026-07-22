@@ -2,15 +2,17 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 0.5** · The Short · 9 scenes (+4B) · ~17–19 min · improv format (action + motivation), except Scene 3 which is scripted.
+**Current version: 0.6** · The Short · 9 scenes (+4B) · ~17–19 min · improv format (action + motivation), except Scene 3 which is scripted.
 
 ---
 
 ## 1. COLD OPEN — INT. OFFICE SPACE — DAY (ONE YEAR AGO) — 90 sec
 
-A floor genuinely ALIVE — dozens of people, phones ringing, cross-talk, printer jams. Crowded enough that we believe this is a normal office. (The whole point: this shot exists so the ONE YEAR LATER cut to nine people lands like a gut punch. Fill the frame with bodies.)
+A floor at its MIDPOINT — not alive, not dead. Maybe twenty people among the empty desks, and the emptiness is clearly recent: times are changing and everyone can feel it. Nobody's mourning; nobody's even looking up.
 
-Cairns packs his desk into a printer-paper box, loud, performing. Ten seconds of an exit speech nobody scheduled — intent: leave as the sane one; the bigger the laugh, the safer he feels. The ROBOT BOSS (monitor on wheels, warm AI likeness of the boss) glides in, delivers a fluent farewell. Cairns snaps something at it meant for the real boss — the man who couldn't be bothered to show up for a goodbye. The machine takes 0.4 seconds — the first time we hear the delay — and converts the insult into cheerful customer service: it thanks him for the feedback. That's the beat: it cannot be offended, and its calm files his anger away like a support ticket to a boss who will never read it. The floor laughs; hold until it curdles.
+Cairns packs his desk into a printer-paper box, loud, performing — but the speech plays almost entirely TO JOHN AND WILL. That's the ache: he's performing an exit for a full office that isn't there anymore. Everybody else is indifferent, unmoved, headphones in. One polite chuckle from somewhere. His intent is the same — leave as the sane one — but the only audience that counts is two guys holding nothing.
+
+The ROBOT BOSS (monitor on wheels, warm AI likeness of the boss) pulls up — and the guys ROAST it. It's a known bit between the three of them; the machine takes their banter with perfect warmth, 0.4 seconds late every time (first hearing of the delay). Then Cairns makes his real complaint — the one meant for the man, not the machine — and we CUT TO WHAT THE BOSS IS SEEING: home, mid-something completely, hilariously not work — halfway through a golf-sim swing, or icing an enormous novelty cake — the office feed propped on a phone he is not watching. The complaint arrives. He doesn't. Back on the floor, the likeness thanks Cairns warmly for the feedback. Hold until it curdles.
 
 At the elevator, Will and John flank him, carrying nothing. John asks about the plan. Cairns, improvised: there is no plan, that's the point. Doors close on him mid-sell. *(Last verified human Cairns in the film. No fixer, no name — Michelle must never exist in his mouth.)*
 
@@ -96,7 +98,9 @@ They let that sit.
 
 **The push (new — Will needs a reason TONIGHT, not just a mood):** after the call, back at his desk or at home on the laptop, Will watches the river and sees one — a face he is CERTAIN is synthetic, the eyes doing the nothing. He does his job: INTERVENE. The screen dims his dashboard and auto-plays a chirpy coaching module — "Trusting Your Tools" — and while it lectures him, in the corner, the system quietly processes his flagged case without him. Correct verdict. No acknowledgment. His one skill, the thing he's better than the machine at, now costs him a training video every time he uses it.
 
-THAT is the night he texts. Not the fantasy pulling — the last thing that was his, fined out of him.
+Then the small mutiny that tells us he's already gone: after a round of mini-putt with John, Will just... decides to WFH for the rest of the day. First time ever. He walks out mid-afternoon, half-waiting to be stopped. Nobody stops him. Nobody notices. The freedom is the horror — the office has already let go of him; he's the last one to find out.
+
+THAT is the night he texts. Not the fantasy pulling — the last thing that was his, fined out of him, and an exit nobody would even see.
 
 Will's apartment — a hotel he's lived in six years. He types, deletes, types: something small and deniable to Michelle — Cairns gave him her number, that's all. Sends. Face-down. Face-up. Three dots, instantly — like she was already typing.
 
@@ -108,11 +112,11 @@ Each capture is its own real scene with its own small comedy, so the audience li
 
 **(a) The residency office.** A clean co-working suite downtown — the "visa fast-track partner." A friendly tech scans his passport, then his face: look left, look right, read this sentence aloud. It is exactly a liveness capture — Will, of all people, remarks that he does this for a living. The tech, warm: then you know it's painless. Everybody laughs. 0.4 seconds. (Nobody notices — but the audience might.)
 
-**(b) The intercom call.** Michelle (voice only, never seen) walks him through "enrolling" for his building's voice entry: repeat these phrases, say your name naturally, now say it like you're tired. Will hams it up; she laughs at his jokes — instantly, warmly. He's enjoying this. It's the most attention anyone has paid him in a year — that's WHY it works.
+**(b) The intake — the ad with his face in it.** Not a boring enrollment call. Michelle sends a "welcome preview," and it's an AUTOMATED ADVERTISEMENT — slick, generated, and starring WILL: his face, his walk, his laugh, composited poolside into the exact paradise from Cairns' calls. "See yourself there." He watches himself live the ad — delighted, a little drunk on it — and clicks CONFIRM MY DETAILS to make it "more accurate." The voice enrollment rides inside it: say your name so we can personalize your welcome; say it like you're excited. He does. He's grinning. (This is the film's thesis in one screen: the ad is the trap, and now he's literally IN the ad. It also quietly establishes the tech can generate a person — loading scene 7.)
 
 **(c) The tour quiz.** An app has him film himself walking through his empty Ohio apartment, narrating what furniture he'd want in the new place. Gait, mannerisms, the apartment he's abandoning — all of it deposited. Playback moment (plants the tell between scenes 2 and 6): the app shows him his own recorded face for "confirmation," and for half a second his own eyes look wrong to him. He blames the compression. Dismisses it. **This is the film teaching the audience the tell a second time — on Will himself.**
 
-**John's plant (sets up the ending):** helping Will pack, John extracts one promise, the only thing he asks for: be back in October for the MINI-PUTT CHAMPIONSHIP. He's made a bracket. There are eleven entrants. It matters to him completely. Will promises, half-listening.
+**John's plant (sets up the ending — reworked, not a random tournament):** the firm announces it in a bloodless email: the FLOOR IS CLOSING — full remote by end of October. John's response is the most John thing imaginable: then the last day in the office is the MINI-PUTT CHAMPIONSHIP. A send-off for the building itself. He starts the bracket that day; helping Will pack, he extracts one promise — be back for it. It's not a whim, it's a funeral he's turning into a party, and it matters to him completely. Will promises, half-listening.
 
 **Design:** these three scenes plus the promise ARE the heist and the ending's setup. Every biometric the finale needs, deposited on camera, with Will smiling.
 
@@ -138,15 +142,17 @@ Four seconds of Will fully awake — the desk catch, replayed on his best friend
 
 **The likeness:** it is not failing; it is performing Cairns at 99.1%. Will is the edge case. **Sound:** the 0.4-second delay surfaces in Cairns' laugh — second hearing.
 
-## 7. THE FACTORY — DAY — 2 min
+## 7. THE RENDER FARM — DAY — 2 min
 
-**(Reworked — nothing is "left behind to find." The operation isn't sloppy; Will was already inside the funnel.)** Michelle's message arrives FIRST: his final residency appointment, tomorrow, at an address he half-recognizes — it's the building from the subtitled conversation. Cairns' building. That coincidence is what he goes to check. He arrives a day early, and early is the whole trick of the scene: reception is expecting him *tomorrow*, so today nobody manages what he sees. He takes the service stairs.
+**(Reworked again — fully generative. No sets, no shoots, no actors, nobody Will half-knows. The AI creates the scene.)** Michelle's message arrives FIRST: his final residency appointment, tomorrow, at an address he half-recognizes — the building from the subtitled conversation. Cairns' building. That coincidence is what he goes to check. He arrives a day early — reception is expecting him *tomorrow*, so today nobody manages what he sees. He takes the service stairs.
 
-Upstairs, not evidence — PRODUCTION. A live shoot in progress: the pool from Cairns' calls, real, full, ring-lit — but the man poolside isn't Cairns, it's some other American he half-knows from the nomad scene, laughing on cue while an operator calls for it warmer. Between setups, Will sees the infrastructure Cairns once passed through: a rack of loud shirts, pressed and tagged with a name; a corkboard of working paperwork — call sheets, today's date. Not traces. Inventory. The next guy's Scene #1 is being manufactured twenty feet from him.
+Upstairs there is NOTHING. That's the reveal: no set, no ring lights, no pool. An ordinary empty floor — some chairs, capture rigs like the ones from his "residency" appointment, and racks of humming servers. The paradise was never anywhere.
 
-Through a service window, one glimpse down: rows of workstations, familiar nomad faces on screens, working, laughing 0.4 seconds late. A young operator dubbing warmth into a laugh, calm as someone tending a machine.
+Then, through a doorway: the RENDER FARM. Rows of workstations, and on them, paradise being MADE. An operator types a line; a poolside evening assembles itself in seconds — Cairns' pool, Cairns' light, water that has never been wet. On another screen a girl who does not exist gets thrown, laughing, into it, and the operator drags a slider and her laugh gets warmer. On a third: familiar nomad faces — likenesses at work, attending standups, laughing 0.4 seconds late. Whole lives, versioned and running. The operators are calm, quiet, tending it like farmland.
 
-**Design:** no violence, no chase, and no one hides anything — that's the horror. A factory doesn't hide; it schedules. Will slips out unnoticed, or almost: hold one beat on a receptionist watching him go, unbothered. What the redundant original sees no longer matters.
+And on one screen, mid-generation, a work in progress Will recognizes before he understands it: HIS OWN welcome ad — the one he confirmed his details into — being refined into something more. Him, poolside, saying things he's never said, warmer with every pass.
+
+**Design:** no violence, no chase, and nothing physical to find — that's the point and the horror. There is no evidence because there are no objects; the crime has no scene. Will slips out. Hold one beat on an operator noticing him in a doorway reflection and not caring. What the redundant original sees no longer matters.
 
 ## 8. THE HANDOVER — 60 sec
 
@@ -156,7 +162,7 @@ The door closes politely. **Direction:** administrative calm throughout. Michell
 
 ## 9. THE CYCLE — "WILL" SELLS JOHN — INT. DEAD SALES DEPT. — DAY — 60 sec
 
-**(Set up in 4B, paid off here.)** CHAMPIONSHIP DAY. The dead office decorated the way one man decorates: a paper banner, a bracket on the whiteboard — eleven names, one crossed out and rewritten smaller: WILL (REMOTE?). John in a homemade referee shirt, waiting by hole 7 with two beers, checking the door between putts. The promise from the packing scene hangs over everything — October came.
+**(Set up in 4B, paid off here.)** THE LAST DAY IN THE OFFICE — and therefore CHAMPIONSHIP DAY. The floor is half-dismantled around the course: desks tagged for pickup, cables coiled, the coffee machine unplugged at last. Against all of it, John's send-off: a paper banner, a bracket on the whiteboard — the remaining names, one crossed out and rewritten smaller: WILL (REMOTE?). John in a homemade referee shirt, waiting by hole 7 with two beers, checking the door between putts. The promise from the packing scene hangs over everything — October came, and the building is being buried today either way.
 
 The phone buzzes. A message from Will — cadence perfect, warmth slightly too on-message: not gonna make it back for the championship bro... but mexico is crazy, you gotta come out HERE. In the mix, buried: the notification landing 0.4 seconds off the phone's normal chirp. Heard, never explained.
 
@@ -174,7 +180,8 @@ Cairns: two calibrated performances a half-degree apart — the terrified man un
 
 ## Changelog
 
-- **0.5** — addressed handwritten notes of July 22 (archived as Notebook — Notes on Master Draft): (1) cold open now visibly crowded so the one-year cut lands; robot-boss beat rewritten as legible behavior — the machine converts insult into customer service — instead of the "flag upstream" line. (3) Michelle now enters the film at the mini-putt: John asks who she is, neither has ever heard the name. (4) new last-straw beat — intervening costs Will a coaching module while the machine solves his case without him; that's the night he texts. Deposits rebuilt as three real scenes (4B) instead of a UI montage, incl. the eyes-plant on Will's own playback; John's championship promise planted here. (5) honeymoon given its drive: Will keeps trying to see Cairns and keeps being postponed. (7) drained pool reworked as THE FACTORY — active production, nothing left to find, Will arrives a day early inside his own funnel. (9) ending now pays the championship setup.
+- **0.6** — addressed v0.5 handwritten notes (archived): (1) cold open dialed back from crowded to MIDPOINT — times visibly changing, everyone indifferent, speech plays only to John and Will; robot boss now subject to the guys' banter, and we cut to what the real boss is seeing at home (something hilariously non-work). (4) added the WFH mutiny — after mini-putt Will leaves mid-afternoon and nobody notices. Intake (b) rebuilt as the automated advertisement starring Will himself — "see yourself there" — which also plants the generative tech. (4b+9 merged, both notes honored) championship kept but no longer random: the floor is closing, last day in office IS the championship; scene 9 now plays against the half-dismantled floor. (7) THE FACTORY → THE RENDER FARM: fully generative, no sets, no actors, no one he half-knows — the paradise was never anywhere, and Will's own welcome ad is mid-refinement when he finds it.
+- 0.5 — addressed handwritten notes of July 22 (archived as Notebook — Notes on Master Draft): (1) cold open now visibly crowded so the one-year cut lands; robot-boss beat rewritten as legible behavior — the machine converts insult into customer service — instead of the "flag upstream" line. (3) Michelle now enters the film at the mini-putt: John asks who she is, neither has ever heard the name. (4) new last-straw beat — intervening costs Will a coaching module while the machine solves his case without him; that's the night he texts. Deposits rebuilt as three real scenes (4B) instead of a UI montage, incl. the eyes-plant on Will's own playback; John's championship promise planted here. (5) honeymoon given its drive: Will keeps trying to see Cairns and keeps being postponed. (7) drained pool reworked as THE FACTORY — active production, nothing left to find, Will arrives a day early inside his own funnel. (9) ending now pays the championship setup.
 - 0.4 — Scene 3 tightened again (v1.2): repeated bros trimmed, softeners cut, offer lands faster. Site now renders scripted scenes in Celtx-style screenplay format.
 - 0.3 — established as master. Scene 3 upgraded to tightened scripted version (v1.1); original handwritten text preserved in archive.
 - 0.2 — blocked script, 9 scenes, award-cut camera grammar per scene.
