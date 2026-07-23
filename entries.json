@@ -1,4 +1,5 @@
 [
+  { "date": "2026-07-23", "title": "NOMAD — MASTER SCRIPT (rendered from v0.7)", "file": "script.md", "category": "master" },
   { "date": "2026-07-23", "title": "NOMAD — MASTER DRAFT (v0.7)", "file": "master.md", "category": "master" },
   { "date": "2026-07-21", "title": "The Short — blocking notes (superseded)", "file": "short-script.md", "category": "draft" },
   { "date": "2026-07-21", "title": "Act Two — Working Script v0.1", "file": "act-2.md", "category": "draft" },
