@@ -1,6 +1,6 @@
 # NOMAD — MASTER SCRIPT
 
-**Rendered from MASTER DRAFT v0.9. Do not edit — changes go to the draft; this re-renders.**
+**Rendered from MASTER DRAFT v0.9.1. Do not edit — changes go to the draft; this re-renders.**
 
 ---
 
@@ -14,7 +14,15 @@ CAIRNS (30s, loud) packs his desk into a printer-paper box, narrating it to a fl
 
 A ROBOT BOSS — a monitor on a wheeled stand, running the boss's warm AI likeness — rolls up. The three of them banter with it. It answers a half-beat late, every time.
 
-Cairns says the thing he means for the real boss.
+Cairns turns to the screen-face — the thing he says is meant for the man.
+
+CAIRNS
+Tell him he could've come in. Just once.
+
+ROBOT BOSS
+I'll pass that along.
+
+A half-beat late.
 
 INT. BOSS'S HOUSE — CONTINUOUS
 

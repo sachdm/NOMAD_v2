@@ -99,4 +99,13 @@ The pivot from the failed memory straight back into the sell is the horror in on
 - Protect the silences: ending, render farm, handover. And leave "Love you, bro" / "then you know it's painless" exactly as they are.
 - Everything above is dialogue that *moves* — nobody explains anything. If a drafted line explains, it's cut.
 
-Open question for next pass: does the film want ONE more Cairns line in the cold open to fix his voice before the calls, or does keeping him near-silent there make the first call hit harder? Leaning silent.
+## 4. The cold-open Cairns line (resolved)
+
+The exit speech stays SILENT — we watch a floor not listening; hearing it makes it a bit, not an ache. But the line *to the robot boss, meant for the absent man* gets scripted:
+
+> CAIRNS (to the screen-face): Tell him he could've come in. Just once.
+> ROBOT BOSS (a half-beat late): I'll pass that along.
+
+*Why it earns it:* a move (wounding the boss through the only proxy present); bravado over hurt (the ache); "come in. Just once." plants the absentee-via-machine theme (the boss never physically comes in — everything's mediated); it plants the 0.4 delay in dialogue at first contact; and it makes the golf-sim cutaway land — he asked, the man isn't watching. One genuine human-Cairns line here also sharpens the later contrast when the likeness gets warmth subtly wrong. Boss stays unnamed — a function, not a person.
+
+Verdict: give Cairns exactly this one line in the cold open. Everything else there stays behavioral.
