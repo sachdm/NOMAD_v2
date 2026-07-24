@@ -2,7 +2,7 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 0.8** · The Short · prologue + 9 scenes (4A/4B/6B added; 8+9 intercut) · ~18–20 min · improv format (action + motivation), except Scene 3 which is scripted.
+**Current version: 0.9** · The Short · prologue + 9 scenes (4A/4B/6B added; 8+9 intercut) · ~18–20 min · improv format (action + motivation); scripted dialogue at the call (sc 3), the putter, the John call, and the midpoint tell.
 
 ---
 
@@ -135,6 +135,8 @@ They let that sit.
 
 **The Michelle setup (improvised, this is where she enters the film):** somewhere over the putters, John asks the obvious thing — da fuq is Michelle? The Service was a *company*; since when does it have a first name that's "tight" with Cairns? Will opens his mouth and realizes he has no idea. They shrug it off — Cairns knows everybody. The audience should file it the way they do: trivia. This is the FIRST time Michelle exists in the film, and she arrives as a person-shaped hole in a corporate pipeline.
 
+**The Baxter plant (do this quietly, here or at Will's desk):** somewhere the dog gets named for real — a photo on Will's desk of a younger Will and Cairns with a mutt, or Will mentions "back when I had Baxter." Establish, once and gently, that BAXTER WAS WILL'S DOG. Never underline it. It's the tripwire the midpoint tell steps on.
+
 **Direction (girls):** their reactions land a half-beat off Cairns' rhythm. Never explained.
 
 ## 4. THE LAST STRAW + THE DIAL — NIGHT — 90 sec
@@ -169,7 +171,12 @@ The intake started it; the remaining captures are each their own scene with thei
 
 **John's plant (sets up the ending — reworked, not a random tournament):** the firm announces it in a bloodless email: the FLOOR IS CLOSING — full remote by end of October. John's response is the most John thing imaginable: then the last day in the office is the MINI-PUTT CHAMPIONSHIP. A send-off for the building itself. He starts the bracket that day; helping Will pack, he extracts one promise — be back for it. It's not a whim, it's a funeral he's turning into a party, and it matters to him completely. Will promises, half-listening.
 
-**The putter (the anchor object):** in the packing scene, John finds Will's putter, tapes WILL on the grip, and keeps it — "so you don't have an excuse." It reappears once, in scene 9, and it does the film's grieving for it.
+**The putter (the anchor object):** in the packing scene, John finds Will's putter, tapes WILL on the grip, and keeps it. It reappears once, in scene 9, and it does the film's grieving for it. The exchange turns — Will diminishes, John elevates:
+
+> WILL: It's a putt-putt bracket, John.
+> JOHN: It's the last one.
+
+("The last one" = the building, the era, the four of them — all ending — disguised as tournament logistics. It's literally the last day, so it's naturalistic and resonant at once. Don't add anything after it; let it sit.)
 
 **Design:** these three scenes plus the promise ARE the heist and the ending's setup. Every biometric the finale needs, deposited on camera, with Will smiling.
 
@@ -177,7 +184,13 @@ The intake started it; the remaining captures are each their own scene with thei
 
 **What this scene is FOR (the drive, stated plainly):** the honeymoon is not vibes — it runs on one engine: **Will is trying to see Cairns in person, and keeps not getting to.** That's the plot thread pulling us through every beat. He landed for the margaritas, sure, but the promise underneath the whole move was *my best friend is there.* So: he texts Cairns on landing — "next week bro, big project." Invites him to the rooftop party — Cairns "just left town." Every deflection is smooth, in character, and each one drops a pebble in Will's shoe. The paradise scenes play AGAINST this low hum of postponement. By the end of the sequence the audience — before Will — is asking the question the film wants asked: *why can't he see his friend?*
 
-**The John call (new — the honest line):** when Will can't reach Cairns, he calls JOHN. It's the warmest scene in Mexico: John on the dark office floor giving mini-putt updates, Will poolside pretending he isn't lonely at a party. And John, helpful, makes it worse without knowing: weird, Cairns liked my bracket post yesterday — he's clearly online. The one honest phone line in the film is also the one that confirms the postponements don't add up. (This call is what makes scene 9 devastating: we've seen what a REAL call between them sounds like.)
+**The John call (the honest line):** when Will can't reach Cairns, he calls JOHN. It's the warmest scene in Mexico: John on the dark office floor giving mini-putt updates, Will poolside pretending he isn't lonely at a party. John, helpful, makes it worse without knowing — his total, undefended belief is what wounds:
+
+> JOHN: Cairns liked my bracket post. So he's in. You're in?
+> WILL: Course.
+> JOHN: (lit up) It's gonna be everybody.
+
+The contradiction rides in naturally — Cairns "liked" the post, so he's online, so the postponements are lies. And John's faith ("it's gonna be everybody") is more heartbreaking than any guilt trip, and it rhymes forward to scene 9, where he'll joyfully text the fake back. This is what makes the finale devastating: we've heard what a REAL call between them sounds like.
 
 **Visual approach (make it the most dynamic sequence in the film):** the honeymoon should MOVE — one continuous flowing energy against the office's locked-off frames. Ideas to test: a single roving take through the rooftop party that keeps almost-finding Cairns (a loud shirt ducking out of frame, a laugh around a corner) and never does — the postponement built into the choreography; match-cuts that snap between the welcome ad's frames and Will's reality landing in the same composition, the ad teaching the eye, reality rhyming with it; the city shot alive and handheld against the office's tripods. The sequence's dynamism IS the seduction — when it stops moving (scene 6, a locked frame on a screen), the audience feels the temperature drop before a word is said.
 
@@ -195,7 +208,14 @@ The ad comes true. The fridge stocked with his exact brands — data leakage wea
 
 **Camera:** the screen grows until Cairns' face fills the frame. The audience does fraud-ops at cinema scale. The tell must play silent on a 40-foot screen.
 
-Same poolside frame as ever. Cairns still selling, still "next week bro." Will, easy and warm, asks a nothing question — a private memory only the two of them hold. The answer comes back correct but transcribed: facts right, eyes wrong. Going nowhere. Not doing the thing.
+Same poolside frame as ever. Cairns still selling, still "next week bro." Will, easy and warm, tries a private memory — and plants a false detail in it. The model swallows the false frame and answers with its warm template, then pivots straight back into the sell:
+
+> WILL: You remember Baxter? Your mom's dog.
+> CAIRNS: Baxter. Best dog ever.
+> WILL: He was mine.
+> CAIRNS: Course he was. — Hey, you booked the flight yet? You gotta get down here, man.
+
+The real Cairns would have said *that was your dog, idiot.* Instead the likeness repeats "best dog ever" and turns it into a pitch — that repetition, and the pivot, ARE the tell. Facts right, memory hollow. (Baxter was planted quietly back at the mini-putt; even unplanted, "he was mine" makes the wrongness land.)
 
 Four seconds of Will fully awake — the desk catch, replayed on his best friend. And then — this is the scene — the call does NOT end. It continues, pleasantly, for a full further beat: Will performing normalcy inside the frame with the thing wearing his friend, managing a warm goodnight, and getting *love you bro* back — 0.4 late. He closes the laptop and sits very still in the best apartment he's ever had. The horror is that nothing happens.
 
@@ -256,6 +276,8 @@ John smiles. Starts typing back.
 Cairns: two calibrated performances a half-degree apart — the terrified man under the volume (sc 1) and the model's warm rendition (sc 3, 6). Cast for the eyes, not the comedy. Will: the four-second awakenings (sc 2 and 6) must rhyme exactly. John: no irony anywhere in him; the last shot only works if his delight is total.
 
 ## Changelog
+
+- **0.9** — folded in the dialogue pass (see Dialogue — First Pass): the midpoint tell is now spoken via the Baxter false-premise ("He was mine." / "Course he was.") pivoting into the sell; planted Baxter as Will's dog earlier; the putter beat turns ("It's a putt-putt bracket, John." / "It's the last one."); the Mexico John call rebuilt on total faith ("It's gonna be everybody."). Endings/render-farm/handover kept deliberately silent.
 
 - **0.8** — thirteen directorial passes (see Thirteen Passes in development). Adopted: prologue image + matching end-frame stutter; scenes 8/9 intercut as the double ritual; locker wall + ☑ REFERENCE RETENTION insert; the tell extended (the call doesn't end — "love you bro," 0.4 late); the building's three-size approach; no-clocks-in-paradise rule (appointment = first time given); Will's putter as anchor object; devastation arrives by sound (his own laugh first); insert-shot language for all captures; regular-blink coaching presenter; new 6B THE SCRUB sequence; one redundant 0.4 mention trimmed.
 - **0.7** — addressed morning notes of 2026-07-23 (archived): (1) killed "no plan that's the point" — replaced with the SERVICE NUGGETS device: Cairns brags about a service he can't describe, branded debris accumulates across Act 1. (3+4) the dial rebuilt: no texting Michelle — Will walks into the Service's dingy strip-mall intake (4A); Michelle reframed as travel-agency CSR (exclamation points, hold music), answering "da fuq is Michelle." (5) honeymoon given a visual approach: roving one-take that almost-finds Cairns, ad-to-reality match cuts; added the John call — "he liked my bracket post yesterday." (8) render farm devastation beat: Will finds Cairns' likeness and HIS OWN likeness mid-call together, the friendship automated. (9) answered: Will is captured, kept; his phone archives Michelle's thread by itself. Plus a running DON'T-BE-CORNY loneliness direction (sink dinners, 34 unused vacation days, muted rewatches). Plot map updated to match.

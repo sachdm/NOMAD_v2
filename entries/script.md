@@ -1,6 +1,6 @@
 # NOMAD — MASTER SCRIPT
 
-**Rendered from MASTER DRAFT v0.8. Do not edit — changes go to the draft; this re-renders.**
+**Rendered from MASTER DRAFT v0.9. Do not edit — changes go to the draft; this re-renders.**
 
 ---
 
@@ -100,6 +100,11 @@ Doesn't sound too bad. You know I've never even left the state?
 
 They let it sit. Then — who's Michelle? The Service was a company; since when does it have a first name? Neither of them knows. They shrug it off.
 
+Will lines up a putt. On the wall behind him, a photo: a younger Will and Cairns, a mutt between them.
+
+WILL
+Back when I had Baxter, I could've made this shot.
+
 ## INT. OFFICE SPACE — WILL'S DESK — DAY
 
 The dashboard: the machine's decisions scrolling too fast to read. Will spots a fraud he's sure of. INTERVENE. His screen dims — a coaching module auto-plays, "Trusting Your Tools," a cheerful presenter who blinks at perfectly regular intervals. In the corner, the system clears his case without him.
@@ -149,12 +154,15 @@ John's answer: the last day in the office is the MINI-PUTT CHAMPIONSHIP. He star
 
 ## INT. WILL'S APARTMENT — NIGHT
 
-John helps Will pack. He tapes WILL on the grip of a putter and keeps it.
+John helps Will pack. He finds Will's putter, tapes WILL on the grip, keeps it. Will holds it up, half-laughing.
+
+WILL
+It's a putt-putt bracket, John.
 
 JOHN
-So you don't have an excuse.
+It's the last one.
 
-Will promises to be back for it, half-listening.
+It sits there. Will promises to be back for it, half-listening.
 
 ## EXT. MEXICO CITY — DAY
 
@@ -171,15 +179,31 @@ He passes a conversation between locals — subtitled for us, not for him — ab
 Will calls JOHN. Mini-putt updates from the dark floor; Will poolside, pretending he isn't lonely at a party.
 
 JOHN
-Weird — Cairns liked my bracket post yesterday. He's clearly online.
+Cairns liked my bracket post. So he's in. You're in?
+
+WILL
+Course.
+
+JOHN
+It's gonna be everybody.
 
 ## INT. WILL'S CDMX APARTMENT — NIGHT
 
-The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, asks a nothing question — a private memory only the two of them hold.
+The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, tries a private memory — and slips a false detail into it.
 
-The answer comes back correct but transcribed. Facts right. Eyes going nowhere.
+WILL
+You remember Baxter? Your mom's dog.
 
-Four seconds of Will fully awake. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
+CAIRNS
+Baxter. Best dog ever.
+
+WILL
+He was mine.
+
+CAIRNS
+Course he was. — Hey, you booked the flight yet? You gotta get down here, man.
+
+Facts right. Memory hollow. Four seconds of Will fully awake. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
 
 CAIRNS
 Love you, bro.
