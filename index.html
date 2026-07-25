@@ -225,6 +225,9 @@
   .note-card .n { color: #2f6df6; font-weight: bold; margin-right: 4px; }
   .note-card.user { border-left-color: #f59e0b; }
   .note-card.user .n { color: #f59e0b; }
+  /* world-context cards — green, anchored to scenes, no marker on the page */
+  .note-card.world { border-left-color: #4ade80; background: #17211a; color: #a9d6b0; }
+  .note-card.world .n { color: #4ade80; }
   .note-card .del { float: right; color: #6b7d6e; cursor: pointer; margin-left: 6px; }
   .note-card .del:hover { color: var(--red); }
 
@@ -251,6 +254,14 @@
     .page-wrap { max-width: 692px; }
     .notes-layer { position: static; width: auto; margin: 4px 26px 40px; }
     .note-card { position: static !important; width: auto; margin: 6px 0; }
+  }
+
+  /* PRESENT / share mode — only the master script, viewers can comment */
+  body.present #sidebar { display: none; }
+  body.present #content { padding-top: 0; }
+  body.present #tb-edit, body.present #tb-download { display: none; }
+  body.present .sp-toolbar::before {
+    content: "NOMAD — read & comment"; color: var(--dim); font-size: 12px; margin-right: 8px;
   }
 
   #welcome { color: var(--dim); margin-top: 10vh; text-align: center; }
@@ -350,7 +361,8 @@ function slugOf(e) { return e.file.replace(/\.md$/, ''); }
 // pulling [[ notes ]] out into the grey gutter.
 function renderScreenplay(src) {
   const notes = [];
-  let noteId = 0;
+  const worldNotes = [];   // context cards for the gutter, anchored to sluglines — NO marker on the page
+  let noteId = 0, sceneIdx = 0;
   // extract [[ note ]] markers -> replace with a numbered ref span, collect text
   const pullNotes = s => s.replace(/\[\[\s*([^\]]+?)\s*\]\]/g, (_, t) => {
     noteId++;
@@ -359,7 +371,7 @@ function renderScreenplay(src) {
   });
 
   const rawLines = src.split('\n');
-  // drop the title h1 and the render-note and leading rule
+  // drop the title h1 and the render-note and leading rule; pull WORLD: lines into gutter context
   const lines = [];
   for (const raw of rawLines) {
     const t = raw.trim();
@@ -384,13 +396,18 @@ function renderScreenplay(src) {
     let l = lines[i].trim();
     if (l === '' || /^---+$/.test(l)) { i++; continue; }
 
+    // WORLD: context line -> pulled OFF the page, attached to the current scene for the gutter
+    const wm = l.match(/^WORLD:\s*(.+)/i);
+    if (wm) { worldNotes.push({ scene: sceneIdx, text: wm[1].trim() }); i++; continue; }
+
     // section header (## that isn't a slug) -> centered
     const hh = l.match(/^##\s+(.*)/);
     if (hh && !isSlug(l)) { html += `<div class="sp-center">${pullNotes(esc2(hh[1]))}</div>`; i++; continue; }
 
     if (isSlug(l)) {
       const txt = l.replace(/^##\s*/, '');
-      html += `<div class="sp-slug${firstSlug ? ' first' : ''}">${pullNotes(esc2(txt))}</div>`;
+      sceneIdx++;
+      html += `<div class="sp-slug${firstSlug ? ' first' : ''}" data-scene="${sceneIdx}">${pullNotes(esc2(txt))}</div>`;
       firstSlug = false; i++; continue;
     }
     if (isTrans(l)) { html += `<div class="sp-trans">${esc2(l)}</div>`; i++; continue; }
@@ -413,7 +430,7 @@ function renderScreenplay(src) {
     html += `<div class="sp-action">${pullNotes(esc2(l))}</div>`;
     i++;
   }
-  return { html, notes };
+  return { html, notes, worldNotes };
 }
 
 // place note cards in the grey gutter, vertically aligned to their refs
@@ -462,7 +479,8 @@ function serializeScript(body) {
   return out.replace(/\n{3,}/g, '\n\n');
 }
 
-function initScriptTools(reader, notes) {
+function initScriptTools(reader, notes, worldNotes) {
+  worldNotes = worldNotes || [];
   const wrap = reader.querySelector('.page-wrap');
   const body = reader.querySelector('#sp-body');
   const status = reader.querySelector('#tb-status');
@@ -478,8 +496,12 @@ function initScriptTools(reader, notes) {
     const comments = loadComments();
     const wrapTop = wrap.getBoundingClientRect().top;
     let lastBottom = -100;
-    // director notes (blue) + user comments (orange), placed by vertical position
+    // world context (green, anchored to sluglines, no page marker) + director notes (blue) + user comments (orange)
     const items = [];
+    worldNotes.forEach(w => {
+      const el = body.querySelector(`.sp-slug[data-scene="${w.scene}"]`);
+      if (el) items.push({ top: el.getBoundingClientRect().top - wrapTop, cls: 'world', label: '◉', text: w.text });
+    });
     wrap.querySelectorAll('.noteref').forEach(ref => {
       const n = notes.find(x => String(x.id) === ref.dataset.note);
       if (n) items.push({ top: ref.getBoundingClientRect().top - wrapTop, cls: '', label: ref.dataset.note, text: n.text });
@@ -636,7 +658,7 @@ async function open(idx, push = true) {
     // --- the rendered master script: white professional screenplay page + gutter notes ---
     if (e.file === SCRIPT_FILE || e.category === 'versions') {
       contentEl.classList.add('page-mode');
-      const { html, notes } = renderScreenplay(text);
+      const { html, notes, worldNotes } = renderScreenplay(text);
       reader.innerHTML = `
         <div class="sp-toolbar">
           <button id="tb-comment" class="comment">💬 Comment</button>
@@ -658,7 +680,7 @@ async function open(idx, push = true) {
           <div class="notes-layer"></div>
         </div>`;
       contentEl.scrollTop = 0;
-      requestAnimationFrame(() => initScriptTools(reader, notes));
+      requestAnimationFrame(() => initScriptTools(reader, notes, worldNotes));
       return;
     }
 
@@ -704,9 +726,15 @@ nav.addEventListener('click', ev => {
   open(parseInt(item.dataset.idx, 10));
 });
 
+// STUDIO vs PRESENT (share) mode.
+// Default (plain link, what you send out): PRESENT — only the master script, sidebar hidden, comments on.
+// ?studio : full workspace (all drafts, dev notes, archive, versions).
+const STUDIO = new URLSearchParams(location.search).has('studio');
+
 (async function boot() {
+  const manifest = STUDIO ? 'entries-studio.json' : 'entries.json';
   try {
-    const res = await fetch('entries.json');
+    const res = await fetch(manifest);
     const raw = await res.json();
     const sorted = [];
     for (const cat of GROUP_ORDER) {
@@ -715,13 +743,22 @@ nav.addEventListener('click', ev => {
     }
     sorted.push(...raw.filter(e => !GROUP_ORDER.includes(e.category || 'journal')));
     entries = sorted;
+
+    if (!STUDIO) {
+      // PRESENT MODE: lock to the master script, hide the workspace chrome.
+      document.body.classList.add('present');
+      const idx = entries.findIndex(e => e.file === SCRIPT_FILE);
+      open(idx >= 0 ? idx : 0, false);
+      return;
+    }
+
     buildSidebar();
     const slug = decodeURIComponent(location.hash.slice(1));
     const idx = entries.findIndex(e => slugOf(e) === slug || e.date === slug);
     if (idx >= 0) open(idx, false);
     else if (entries.length) open(0, false);
   } catch {
-    reader.innerHTML = `<div style="color:var(--red)">couldn't load entries.json — if opened as a local file, run:<br><span style="color:var(--dim)">python3 -m http.server</span></div>`;
+    reader.innerHTML = `<div style="color:var(--red)">couldn't load ${manifest} — if opened as a local file, run:<br><span style="color:var(--dim)">python3 -m http.server</span></div>`;
   }
 })();
 </script>
