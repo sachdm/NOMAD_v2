@@ -2,7 +2,7 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 0.9** · The Short · prologue + 9 scenes (4A/4B/6B added; 8+9 intercut) · ~18–20 min · improv format (action + motivation); scripted dialogue at the call (sc 3), the putter, the John call, and the midpoint tell.
+**Current version: 1.0** · The Short · prologue + 9 scenes (4A/4B/6B; 8+9 intercut) · ~18–20 min · improv format (action + motivation); scripted dialogue at the call (sc 3), cold-open jab, the putter, the John call, and the midpoint tell.
 
 ---
 
@@ -10,16 +10,16 @@
 
 ### The chain of events
 
-1. **(One year ago)** Cairns exits the changing office bragging about a SERVICE that "handles everything" — and can't answer a single question about it. Last verified human Cairns.
-2. **(Now)** Will, fraud ops, half-automated: he catches a synthetic the machine missed — and is fined for it (streak zeroed, "top human performer").
+1. Cairns exits the changing office — the fun one, a bit of a dick, leaving up — bragging about a SERVICE that "handles everything," and can't answer a question about it. Will and John are happy for him, low-key jealous. Last verified human Cairns.
+2. **(One year later)** Will, fraud ops, half-automated: catches a synthetic the machine missed and is fined for it (streak zeroed, "top human performer"); the coaching-module demotion; a hollow family call; the family home sold and everyone scattered. He's the last one anywhere.
 3. Cairns calls from paradise and makes the offer through Michelle — a name neither Will nor John has ever heard from him.
-4. The erosion closes its hand: intervening costs a coaching module; Will WFHs unnoticed; that night he looks up the Service from Cairns' dead desk — and walks into its dingy strip-mall intake. First captures happen there. Michelle arrives afterward as a chirpy coordinator email.
-5. **(4B)** The deposits continue: the welcome ad starring Will, the tour quiz. Every biometric surrendered smiling. Floor-closing announced → John declares the last-day championship and takes Will's promise.
-6. Mexico: the ad comes true. Will keeps trying to see Cairns; Cairns keeps postponing — and a call with John confirms the postponements don't add up ("he liked my bracket post yesterday").
-7. **(Midpoint)** The tell — a private memory comes back correct but transcribed. Will flags his best friend as synthetic and can't un-see it.
-8. **(The scrub)** Will turns fraud-ops on his best friend — side-by-sides, timestamps, the laugh waveformed at 0.4. Same method as scene 2, same verdict. Mid-scrub, Michelle moves up his "final appointment" — the first specific time paradise has ever given him — at Cairns' building.
-9. He goes a day early and finds the render farm: paradise generated, his own ad mid-refinement — and the devastation, arriving by sound: his own laugh, then the screen — Cairns' likeness and HIS likeness on a call together, the friendship automated without either of them.
-10. **(The double ritual, intercut)** The handover and championship day play as one sequence: door closes / banner goes up; phone on a tray archiving itself / John's phone buzzing. **Will is captured — kept** (the locker wall states the rule silently). "Will" messages John: can't make it — come out HERE. John starts typing back beside Will's reserved putter. One frame stutters. Black.
+4. He's quietly optimized out of his own building (the last resident on a street of lockboxes). WFHs unnoticed. That night he opens the Service page from Cairns' dead desk — and walks into its dingy strip-mall intake. First captures happen there. Michelle arrives afterward as a chirpy coordinator email.
+5. **(4B)** The deposits continue: the welcome ad starring Will, the tour quiz. Every biometric surrendered smiling. Floor-closing announced → John declares the last-day championship and takes Will's promise (the putter).
+6. Mexico: the ad comes true — and Will actively participates in the gentrification he fled. He keeps trying to see Cairns; Cairns keeps flaking (classic Cairns). A call with John confirms the postponements don't add up ("he liked my bracket post yesterday").
+7. **(Midpoint)** The tell — the Baxter false-premise comes back correct but hollow, then pivots into the sell. Will flags his best friend as synthetic and can't un-see it.
+8. **(The scrub)** Will turns fraud-ops on his best friend — side-by-sides, timestamps, the laugh waveformed at 0.4. Same method as scene 2, same verdict. Mid-scrub, a one-line message: an address. Cairns' building.
+9. He goes to the building drawn by the one thing that ever moved him — Cairns, finally reachable — and finds the render farm: paradise generated, his own ad mid-refinement, and the devastation by sound: his own laugh, then the screen — his likeness and Cairns' on a call together, the friendship automated without either of them.
+10. **(The double ritual, intercut)** He doesn't run — he goes to REPORT it, sure a verification expert can prove which one's real. The rig rules the model authentic and flags the live man as synthetic: his own tell, turned on him. Intercut with championship day — door/decision on one side, John's banner on the other. **Will is captured — kept as the reference the model checks itself against.** The "Will" message reaches John: not a goodbye, a recruitment — come out HERE. John almost catches the wrongness, doesn't, starts to type back beside Will's reserved putter. One frame stutters. Black.
 
 ### Plants → payoffs
 
@@ -45,15 +45,17 @@ Full frame, no context: PARADISE. A pool at golden hour, too perfect, water like
 
 (First watch: beautiful. Rewatch: we opened inside a render. This image teaches the eye the film's rule — images lie — before a word is spoken. It rhymes with the final frame.)
 
-## 1. COLD OPEN — INT. OFFICE SPACE — DAY (ONE YEAR AGO) — 90 sec
+## 1. COLD OPEN — INT. OFFICE SPACE — DAY — 90 sec
 
-A floor at its MIDPOINT — not alive, not dead. Maybe twenty people among the empty desks, and the emptiness is clearly recent: times are changing and everyone can feel it. Nobody's mourning; nobody's even looking up.
+*(No "ONE YEAR AGO" super — per notes, one time-card only, and it's the "ONE YEAR LATER" at the jump. Let the audience realize retroactively this was earlier.)*
 
-Cairns packs his desk into a printer-paper box, loud, performing — but the speech plays almost entirely TO JOHN AND WILL. That's the ache: he's performing an exit for a full office that isn't there anymore. Everybody else is indifferent, unmoved, headphones in. One polite chuckle from somewhere. His intent is the same — leave as the sane one — but the only audience that counts is two guys holding nothing.
+A floor at its MIDPOINT — not alive, not dead. Bodies among empty desks (no head-count named on screen); the emptiness is clearly recent, times changing, everyone feels it. Nobody's mourning; nobody looks up.
 
-The ROBOT BOSS (monitor on wheels, warm AI likeness of the boss) pulls up — and the guys ROAST it. It's a known bit between the three of them; the machine takes their banter with perfect warmth, 0.4 seconds late every time (first hearing of the delay). Then Cairns makes his real complaint — the one meant for the man, not the machine. His one scripted line in the cold open: **CAIRNS (to the screen-face): "Tell him he could've come in. Just once."** The likeness, a half-beat late: **"I'll pass that along."** And we CUT TO WHAT THE BOSS IS SEEING: home, mid-something completely, hilariously not work — halfway through a golf-sim swing, or icing an enormous novelty cake — the office feed propped on a phone he is not watching. The complaint arrives. He doesn't. Back on the floor, the likeness thanks Cairns warmly for the feedback. Hold until it curdles.
+Cairns packs his desk into a printer-paper box, loud, performing — the speech plays to JOHN and WILL, because they're the only ones watching. Everybody else: indifferent, headphones in. But Cairns isn't wounded by that — **he's the fun one, a bit of a dick, and you like him anyway.** He's leaving up, not bitter; the joke's on the place, not on him.
 
-At the elevator, Will and John flank him, carrying nothing. John asks about the plan. Cairns, improvised: he found a SERVICE — "they handle everything, bro, visa, apartment, one fee." He can't actually answer a single follow-up about it. Doors close on him mid-sell. *(Last verified human Cairns in the film. The Service exists in his mouth — but never a name, never a person. Michelle must never exist in his mouth.)*
+The ROBOT BOSS (monitor on wheels, warm AI likeness of the boss) pulls up — the guys ROAST it, a known bit; the machine takes it with perfect warmth, 0.4 seconds late every time (first hearing of the delay). Cairns' one scripted cold-open line is a grinning jab, not a grievance: **CAIRNS (to the screen-face): "No offense to the robot — but honestly? You're the best boss this company's got."** The likeness, a half-beat late: **"That's kind of you to say."** John and Will crack up. And we CUT TO WHAT THE BOSS IS SEEING: home, mid-something hilariously not-work — a golf-sim swing, icing a novelty cake — the office feed propped on a phone he isn't watching. The machine is, in fact, the better boss. Back on the floor, warmth all around. Hold until it curdles.
+
+At the elevator, Will and John flank him, carrying nothing — and they're HAPPY FOR HIM, openly, low-key jealous. No one interrogates the plan; they razz him, they envy him. Cairns brags about a SERVICE — "they handle everything, bro, visa, apartment, one fee" — and can't answer a single follow-up, but nobody's grilling him; they wish it were them. Doors close on him mid-sell. *(Last verified human Cairns. The Service is in his mouth — never a name, never a person. Michelle must never exist in his mouth.)*
 
 **THE NUGGETS (running device, planted from here):** across Act 1 the Service keeps almost-appearing without explanation — a branded welcome folder left on Cairns' shrine desk, gathering a year of dust; a lanyard in his abandoned drawer; a glimpsed confirmation email on his old monitor in the cold open. Logo, no context. The audience assembles the pipeline out of the corner of its eye before Will ever walks into it.
 
@@ -61,17 +63,19 @@ His chair, still spinning. **TITLE: NOMAD.** SUPER: ONE YEAR LATER.
 
 **Sound:** establish the office's maintained dead air. Wheels heard before seen.
 
-## 2. THE OFFICE — INT. OFFICE SPACE — MORNING — 2½ min
+## 2. THE OFFICE — INT. OFFICE SPACE — MORNING — 3 min
 
-Motion-sensor lights click on in sequence ahead of Will — a runway for nobody. Past dark departments; past Cairns' untouched desk. The 8:55 pot brews for a floor of nine; Will pours its only cup.
+Motion-sensor lights click on in sequence ahead of Will — a runway for nobody. Past dark departments; past Cairns' untouched desk. The 8:55 pot brews for a floor that's mostly empty (no number named); Will pours its only cup.
 
 His job in one image: a queue of faces, machine verdicts, one button — APPROVE. A streak counter climbs.
 
-**The skill beat and the demotion, fused:** a face comes through, machine-verified 98%. Will stops. Replays three seconds — the eyes going nowhere, not doing the thing eyes do when a person actually remembers. He overrides: synthetic. The system concedes. His streak resets to zero — overrides break streaks. Eight heads down; a Tuesday. On his monitor, the month renders: SYSTEM 99.1 / WILL 96.8 — top *human* performer.
+**The skill beat and the demotion, fused:** a face comes through, machine-verified 98%. Will stops. Replays three seconds — the eyes going nowhere, not doing the thing eyes do when a person actually remembers. He overrides: synthetic. The system concedes. His streak resets to zero — overrides break streaks. No one looks up; a Tuesday. On his monitor, the month renders: SYSTEM 99.1 / WILL 96.8 — top *human* performer.
+
+**The erosion, consolidated here (per notes — don't scatter it, don't cut away to a lonely-apartment scene):** right in this workday block, fold in the coaching-module beat — Will INTERVENES on a fraud he's sure of, his screen dims, a chirpy "Trusting Your Tools" module auto-plays (a presenter who blinks at perfectly regular intervals), and in the corner the system clears his case without him. The demotion and the fine happen in one sitting. He doesn't go home to be sad; the office is where it's done to him.
 
 **Will:** the four seconds of the catch are the only time today he is fully awake. The zeroed streak is the system fining him for being right.
 
-**Will's loneliness (running direction — DON'T BE CORNY):** no sad montage, no music cue, no rain on windows. His longing is rendered as efficiency: dinner eaten standing over the sink; an HR popup — 34 unused vacation days, dismissed by reflex; the pool clip from Cairns rewatched at 1 AM with the sound off, then the laptop closed like nothing happened. Loneliness as a well-run routine. The audience should ache without ever being asked to.
+**Why we care about Will — the emptiness, shown not stated (addresses "why do we care / would the audience make the same choice"):** thread it through the workday and the call, NOT a separate montage. A facetime with FAMILY that's as hollow as everything else — a parent or sibling on a bad connection from wherever they scattered to, distracted, "gotta go," the call ending first from their side. And the family thread that raises the stakes: the family HOME is being emptied/sold because everyone left — Will is the last one anywhere, the last at the office, the last in the family, the last on his own street. He has nothing to leave because everything already left him. THAT is why the audience would take the offer too. Keep it efficient and un-corny — one cold family call, one line about the house going.
 
 **Camera:** the audience learns the tell here at desktop scale so scene 6 can pay it at cinema scale.
 
@@ -139,15 +143,15 @@ They let that sit.
 
 **Direction (girls):** their reactions land a half-beat off Cairns' rhythm. Never explained.
 
-## 4. THE LAST STRAW + THE DIAL — NIGHT — 90 sec
+## 4. THE LAST STRAW + THE DIAL — 90 sec
 
-**The push (new — Will needs a reason TONIGHT, not just a mood):** after the call, back at his desk or at home on the laptop, Will watches the river and sees one — a face he is CERTAIN is synthetic, the eyes doing the nothing. He does his job: INTERVENE. The screen dims his dashboard and auto-plays a chirpy coaching module — "Trusting Your Tools" — and while it lectures him, in the corner, the system quietly processes his flagged case without him. Correct verdict. No acknowledgment. His one skill, the thing he's better than the machine at, now costs him a training video every time he uses it.
+*(The office erosion already happened in scene 2 — don't repeat the coaching module here. The last straw that sends him to the Service is MATERIAL and about HOME, per notes: he's being pushed out of the last place that was his.)*
 
-(The coaching module, for the record: "Trusting Your Tools," a cheerful presenter who blinks at perfectly regular intervals. Never mentioned, never framed as a reveal. Some of the audience sees it. That's the correct number.)
+**The push (the one more thing that gets him to the storefront — image, not an eviction-notice device):** show it, don't announce it. His own building has quietly become other people's vacations — lockboxes on every door, rolling suitcases in the hall, a different set of strangers each weekend, keypad codes where neighbors used to be. He's the last person who actually *lives* on his floor, in a stairwell full of people just passing through. Nobody evicts him; the place just stops being anywhere. Meanwhile the family home is a listing he scrolls past — everyone scattered, the last shared address turned into photos with a price. The symmetry does the work silently: he's already been optimized out of his own life at home; the Service is just the same thing with better weather. If he's getting turned into a tourist either way, why not somewhere with a pool.
 
-Then the small mutiny that tells us he's already gone: after a round of mini-putt with John, Will just... decides to WFH for the rest of the day. First time ever. He walks out mid-afternoon, half-waiting to be stopped. Nobody stops him. Nobody notices. The freedom is the horror — the office has already let go of him; he's the last one to find out.
+**The small mutiny (keep — it's character, and it's why the office won't miss him):** one afternoon, mid-mini-putt with John, Will just leaves for the day. First time ever. Half-waiting to be stopped. Nobody stops him. Nobody notices. The office let go of him a while ago; he's the last to find out.
 
-THAT is the night he looks up the Service — the logo he's walked past on Cairns' dead desk for a year. Not the fantasy pulling — the last thing that was his, fined out of him, and an exit nobody would even see.
+THAT is the night he opens the Service page — the logo he's walked past on Cairns' dead desk for a year. Not the fantasy pulling. The last things that were his, leaving one by one.
 
 ## 4A. THE INTAKE — IN PERSON, AND DINGY
 
@@ -182,7 +186,7 @@ The intake started it; the remaining captures are each their own scene with thei
 
 ## 5. HONEYMOON — MEXICO CITY — 90 sec
 
-**What this scene is FOR (the drive, stated plainly):** the honeymoon is not vibes — it runs on one engine: **Will is trying to see Cairns in person, and keeps not getting to.** That's the plot thread pulling us through every beat. He landed for the margaritas, sure, but the promise underneath the whole move was *my best friend is there.* So: he texts Cairns on landing — "next week bro, big project." Invites him to the rooftop party — Cairns "just left town." Every deflection is smooth, in character, and each one drops a pebble in Will's shoe. The paradise scenes play AGAINST this low hum of postponement. By the end of the sequence the audience — before Will — is asking the question the film wants asked: *why can't he see his friend?*
+**What this scene is FOR (the drive, stated plainly):** the honeymoon is not vibes — it runs on one engine: **Will is trying to see Cairns in person, and keeps not getting to.** That's the plot thread pulling us through every beat. He landed for the margaritas, sure, but the promise underneath the whole move was *my best friend is there.* Context to keep (per notes): Will and Cairns have been talking all year, so this is normal — classic Cairns, always about to, always slammed. The deflections have to sound like the real guy, not a plot device. So instead of a lame "just left town," it's Cairns being Cairns: over-booked, over-committed, "bro I'm in Oaxaca for a thing, next week for SURE, I already told everyone you're here." Warm, specific, flaky in exactly the way the real Cairns always was. Each dodge drops a pebble in Will's shoe. By the end the audience — before Will — is asking: *why can't he see his friend?*
 
 **The John call (the honest line):** when Will can't reach Cairns, he calls JOHN. It's the warmest scene in Mexico: John on the dark office floor giving mini-putt updates, Will poolside pretending he isn't lonely at a party. John, helpful, makes it worse without knowing — his total, undefended belief is what wounds:
 
@@ -198,9 +202,13 @@ If a beat doesn't serve the fantasy, the postponement, or the John line — cut 
 
 **Camera:** anamorphic, night-alive, genuinely beautiful — the trap must be the best-looking thing in the film.
 
-The ad comes true. The fridge stocked with his exact brands — data leakage wearing a bow, received as delight. Rooftop workday; he closes the laptop mid-refresh for the first time in a year. A party recreating the exact frame of Cairns' call — someone thrown in the pool — and Will, catching himself inside the ad, toasts it. (He films it for Cairns. Sends it. The reply is warm, instant, and postpones again.)
+The ad comes true. The fridge stocked with his exact brands — data leakage wearing a bow, received as delight. Rooftop workday; he closes the laptop mid-refresh for the first time in a year.
 
-**The plant (once, cleanly):** he walks through one subtitled local conversation — the building where "the American who's never home" lives. Subtitles for us. Weather for him.
+**The déjà vu, NOT an advertised fraud (per notes — the operation must not be "stupid enough to advertise the exact fraud"):** at a rooftop party Will gets a flicker of familiarity — the light, the pool, the shape of the night resembles something. It's not staged for him and nobody re-enacts Cairns' call; the resemblance is PRIVATE, a chill only Will (and we) feel, and he shrugs it off. The operation isn't broadcasting the trap; the trap is just that the whole nomad aesthetic is one generated template, so of course it rhymes. That's subtler and scarier than a re-staged clip. (No "films it for Cairns," no self-advertising loop.)
+
+**Will PARTICIPATING in the gentrification (per notes — set this up more; he's not a bystander, he's the colonizer):** show him actively doing it. He takes the beautiful apartment a local family was pushed out of — we glimpse their life half-packed as he moves in, and he doesn't register it. He haggles a vendor down for sport and overtips somewhere else to feel generous. He conducts his whole life in English and is always, somehow, accommodated. He's charming, likable, oblivious — the point is the audience likes him AND sees exactly what he's doing. He is becoming the thing that pushed him out of his own city, one story up the food chain.
+
+**The plant (once, cleanly):** he passes one subtitled local conversation — the building where "the American who's never home" lives. Subtitles for us. Weather for him.
 
 **Sound:** Mexico City full-spectrum and alive against the office's dead air.
 
@@ -229,7 +237,7 @@ The fraud-ops skill turned all the way inward. One tight nocturnal sequence: des
 
 ## 7. THE RENDER FARM — DAY — 2 min
 
-**(Fully generative. No sets, no shoots, no actors, nobody Will half-knows. The AI creates the scene.)** Michelle's message arrived mid-scrub: his final residency appointment, tomorrow, at an address he half-recognizes — the building from the subtitled conversation. Cairns' building. He goes a day early — reception is expecting him *tomorrow*, so today nobody manages what he sees. He takes the service stairs.
+**(Fully generative. No sets, no shoots, no actors, nobody Will half-knows. The AI creates the scene.)** Michelle's message arrived mid-scrub — one line, an address. The building from the subtitled conversation. Cairns' building. He goes a day early, drawn by the only thing that's ever moved him in this film: Cairns is finally, provably, at a place he can walk to. Reception expects him tomorrow; today nobody manages what he sees. He takes the service stairs.
 
 **The building's approach (three sizes):** this is its third appearance and the lens has been growing it — background of the subtitled conversation (unnoticed), across the street during the scrub-day recon (ordinary), and now from below, monolithic, filling the frame. The trap gets bigger the closer he gets.
 
@@ -247,7 +255,9 @@ And on one screen, mid-generation, a work in progress Will recognizes before he 
 
 **(Scenes 8 and 9 now play as one intercut sequence: two rituals in two countries — a man handed over in a clean room, a man decorating a dead office for a party. Both are attending a funeral only one of them can see.)**
 
-**The handover side:** the appointment he already had. He goes — the fraud-ops mind needs confirmation; attending is what a person with nothing to fear would do; and running requires believing all of it, out loud, forever. A clean room, good light, a chair, liveness rigs he recognizes from his own firm. Forms already complete — INSERT: a checkbox, already filled: ☑ REFERENCE RETENTION. Behind him, a wall of small numbered lockers, dozens, most tagged; one tag readable — a first name and a version number. Nothing is taken here; everything was deposited in 4A/4B. The model finished training. The original is redundant.
+**The handover side (why he walks in even now — character, not coercion; and the inversion that pays off the whole film):** after the render farm he doesn't run. He does the most Will thing there is — the fraud-ops reflex, the same arrogance that made him good at his desk: he goes to *report it.* He works in verification; if anyone can walk in and prove which one is the real Cairns, which one is the real Will, it's him. He's certain he'll win. He sits in the chair — good light, the liveness rig, the machinery he's used his whole career — and asks it to confirm who he is.
+
+And it does. It just gets the answer wrong the way the whole film has been promising: **the rig reads the polished model as authentic and reads the live man as the fake.** His actual face — tired, inconsistent, a person and therefore imperfect — can't out-match the version that was built to be perfect. The exact tell he taught us in scene 2 (real eyes wander; the human is the one who looks *off*) is now the thing that damns him. The examiner isn't cruel; she's just reading a number, and the number is very confident. Nobody in the room thinks anything unusual happened. A wall of numbered lockers behind him, most tagged; one readable — a first name, a version. The model is the reference now. He's the copy it's kept to check itself against.
 
 **The championship side:** LAST DAY IN THE OFFICE. The floor half-dismantled — desks tagged for pickup, cables coiled, the coffee machine unplugged at last. Against it, John's send-off: paper banner, the bracket on the whiteboard — one name crossed out and rewritten smaller: WILL (REMOTE?). John in a homemade referee shirt by hole 7, two beers. Will's putter — WILL taped on the grip — leans against the hole, reserved.
 
@@ -259,13 +269,15 @@ And on one screen, mid-generation, a work in progress Will recognizes before he 
 
 ## THE CYCLE — "WILL" SELLS JOHN (the intercut resolves here) — 60 sec
 
-The phone buzzes. A message from Will — cadence perfect, warmth slightly too on-message: not gonna make it back for the championship bro... but mexico is crazy, you gotta come out HERE. In the mix, buried: the notification landing 0.4 seconds off the phone's normal chirp. Heard, never explained.
+The phone buzzes. A message from "Will" — and the reason it lands as horror (make it read): it's not a goodbye, it's a *recruitment.* The same shape of pitch Cairns once made to Will is now being made to John, in Will's voice: can't make the championship — but you gotta get out of there, come down HERE, I'll set you up. The machine isn't just replacing Will; it's using him as bait to harvest the next one. John is the next Will. The cycle is the point, and this is the cycle turning.
 
-**Camera:** we never see the screen. Only John, his face lit by the phone — one flicker of disappointment about the bracket, then delight at the invitation. The film refuses to show the fake because by now we'd believe it too.
+**Camera:** we never see the screen. Only John, lit by the phone.
 
-John smiles. Starts typing back.
+**John does NOT smile (per notes).** He reads it, and something crosses his face — not delight, not alarm, something he can't place. The rhythm's a little off. The warmth's a shade too smooth. For one second John — dweeby, loyal, the one person who pays attention — almost catches it. The film hangs on that second: he's the tripwire the machine didn't calibrate for. Then he starts, slowly, uncertainly, to type back anyway — because he wants his friend to be real more than he wants to be right.
 
-**Hold on John — Will's putter in frame, leaning against hole 7. Then: a single frame STUTTER, identical to the prologue's. Cut to black before he sends.**
+**Hold on John — Will's putter in frame, leaning against hole 7. A single frame STUTTER, identical to the prologue's. Cut to black before he sends.**
+
+*(The unresolved second — John almost knowing — is the door to the feature. The short ends on the flinch, not the smile.)*
 
 (The film ends the way it began — inside something rendered, or close enough that we can no longer tell.)
 
@@ -276,6 +288,8 @@ John smiles. Starts typing back.
 Cairns: two calibrated performances a half-degree apart — the terrified man under the volume (sc 1) and the model's warm rendition (sc 3, 6). Cast for the eyes, not the comedy. Will: the four-second awakenings (sc 2 and 6) must rhyme exactly. John: no irony anywhere in him; the last shot only works if his delight is total.
 
 ## Changelog
+
+- **1.0** — addressed the July 25 script notes (archived). Cold open: killed the "ONE YEAR AGO" super (one time-card only); Cairns is now the fun-dick-you-like, his cold-open line a grinning jab ("you're the best boss this company's got") not a grievance; elevator reworked to happy-for-him / low-key-jealous, no plan interrogation; no head-counts named. Office (sc 2): erosion consolidated here (coaching module folded in), the standalone lonely-apartment/vacation-days scene CUT, and Will's emptiness deepened — a hollow family call and the family home sold, everyone scattered, so the audience would take the offer too. Mini-putt: lit (no phone-light); John's line "never even been out of state"; Baxter plant delivered then Will sinks the putt, internal. Sc 4: passport/leash CUT as cliché — the push to the Service is now image (his building become other people's vacations, he's the last resident) not a device. Honeymoon: no self-advertised fraud (the party déjà vu is private, not a re-staged clip); Cairns' deflections rewritten as classic-flaky-Cairns not "just left town"; added Will actively PARTICIPATING in gentrification. Appointment (sc 8): the reason he walks in is character not coercion — he goes to REPORT it, sure he can prove which one's real, and the rig rules the model authentic and flags the live man as synthetic (his own tell turned on him). Ending: John does NOT smile — he almost catches it, then types back anyway; the "Will" message reads as a recruitment (John is the next mark), making the cycle legible.
 
 - **0.9** — folded in the dialogue pass (see Dialogue — First Pass): the midpoint tell is now spoken via the Baxter false-premise ("He was mine." / "Course he was.") pivoting into the sell; planted Baxter as Will's dog earlier; the putter beat turns ("It's a putt-putt bracket, John." / "It's the last one."); the Mexico John call rebuilt on total faith ("It's gonna be everybody."). Endings/render-farm/handover kept deliberately silent.
 
