@@ -2,7 +2,7 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 1.2** · The Short · prologue + 9 scenes (4A/4B/6B; 8+9 intercut) · ~17–19 min · improv format (action + motivation); scripted dialogue at the call (sc 3), cold-open jab, the putter, the John call. The midpoint tell is the HANDSHAKE (physical, legible), planted in the cold open.
+**Current version: 1.3** · The Short · prologue + 9 scenes (4A/4B/6B; 8+9 intercut) · ~17–19 min · improv format (action + motivation); scripted dialogue at the call (sc 3), cold-open jab, the putter, the John call. Midpoint tell = HANDSHAKE (physical) + the likeness over-correcting warmth in words ("I love you, man"). Dialogue passed through ten craft critiques.
 
 ---
 
@@ -81,39 +81,29 @@ His job in one image: a queue of faces, machine verdicts, one button — APPROVE
 
 **Camera:** the audience learns the tell here at desktop scale so scene 6 can pay it at cinema scale.
 
-## 3. THE CALL — CAIRNS SELLS — INT. OFFICE SPACE — DAY — 3 min *(SCRIPTED — v1.2)*
+## 3. THE CALL — CAIRNS SELLS — INT. OFFICE SPACE — DAY — 3 min *(SCRIPTED — v1.3)*
 
 **Camera:** shot from Will's world; the screen small in the dark office. We watch him watch the ad — the brightest object on the floor.
+
+**Dialogue technique (per the dialogue critiques):** Cairns is already an ad and doesn't know it — his verbal signature is PRICING joy ("two for one," "for free," "set up by Friday"). His warmth is sloppy and word-dropping ("Love you, buddy!") — that sloppiness is the plant the likeness later over-corrects. The sell is specific to WILL's misery (verification, logins), not generic margaritas. And one of the girls gets a real subtitled line with agency that undercuts Cairns while he misreads it as agreement — the colonial obliviousness in one exchange.
 
 Will at his desk. On his display: CAIRNS — poolside, sun, abundance.
 
 ### CAIRNS
 
-You wouldn't believe it here, bro. Everything's two for one. And I'm not just talking about the food — right, ladies?
+You wouldn't believe it, bro. Everything down here's two for one. Everything.
 
-*(wink wink)*
+*(lower, like a secret)* You know how long since I clicked approve on anything? Since anybody checked I was — *(waving it off)* I don't even remember my own login, man.
 
-### TWO GIRLS
+### GIRL
 
-¡Sí!
-
-*(giggling)*
+*(subtitled, to the other girl, dry — not for Cairns)* Ten minutes and he thinks he's a local.
 
 ### CAIRNS (CONT'D)
 
-You gotta get out here. It's life on crack. Same setup for work — but with bottomless margaritas.
+*(not understanding, delighted)* See? They love it here too. Anyway — you know I'm tight with Michelle. Say the word, you're set up by Friday.
 
-The girls escalate — from decoration, to distraction, to pulling him out of frame.
-
-### CAIRNS (CONT'D)
-
-Anyway — you know I'm tight with Michelle. Say the word, I'll get you set up.
-
-### CAIRNS (CONT'D)
-
-Ladies, ladies — calm your horses. Plenty of papi to go around. Ladies!
-
-They really make him go now.
+The girls pull him from frame.
 
 ### CAIRNS (O.S.) (CONT'D)
 
@@ -220,7 +210,7 @@ The ad comes true. The fridge stocked with his exact brands — data leakage wea
 
 **Camera:** the screen grows until Cairns' face fills the frame. The audience does fraud-ops at cinema scale. The tell must play silent on a 40-foot screen.
 
-Same poolside frame as ever. Cairns still selling, still "next week bro." Will raises a fist to the webcam and starts THEIR HANDSHAKE — the dumb elaborate one they've done since college, muscle memory. The likeness follows: it *knows* the handshake, but comes a half-beat late and lands one move wrong — the exact beat the real Cairns never misses — then laughs the same laugh 0.4 off and slides back into the sell. **The tell is now physical and legible (per festival notes — no wordless blank): it plays on the page and on a 40-foot screen, and it's planted in the cold open where Will and Cairns do it fast and perfect.** Facts right, reflex wrong. Four seconds of Will fully awake, hand still up.
+Same poolside frame as ever. Cairns still selling, still "next week bro." Will raises a fist to the webcam and starts THEIR HANDSHAKE — the dumb elaborate one they've done since college, muscle memory. The likeness follows: it *knows* the handshake, but comes a half-beat late and lands one move wrong — the exact beat the real Cairns never misses — then laughs the same laugh 0.4 off and slides back into the sell. **The tell is physical AND linguistic (two integrated techniques): the handshake reflex is a hair off, and then the likeness OVER-CORRECTS the warmth in words — real Cairns drops the "I," slurs it ("love you, buddy"); the likeness says the whole thing, cleanly: "I love you, man." Too complete, 0.4 late. Grammar as the tell.** Facts right, reflex wrong, warmth a size too big. Four seconds of Will fully awake, hand still up.
 
 Four seconds of Will fully awake — the desk catch, replayed on his best friend. And then — this is the scene — the call does NOT end. It continues, pleasantly, for a full further beat: Will performing normalcy inside the frame with the thing wearing his friend, managing a warm goodnight, and getting *love you bro* back — 0.4 late. He closes the laptop and sits very still in the best apartment he's ever had. The horror is that nothing happens.
 
@@ -286,6 +276,7 @@ Cairns: two calibrated performances a half-degree apart — the terrified man un
 
 ## Changelog
 
+- **1.3** — dialogue passed through ten craft critiques (see Ten Critiques on the Dialogue) and revised accordingly. Cairns' sell made specific to Will's misery (verification/logins, not generic margaritas) with a pricing-joy verbal signature; killed "life on crack" / "bottomless margaritas" clichés. Gave a local girl a real subtitled line with agency ("Ten minutes and he thinks he's a local") that Cairns misreads as agreement. Integrated the LIKENESS's linguistic tell — real Cairns drops words ("Love you, buddy!"), the fake over-corrects ("I love you, man"), twinned with the handshake. Camila gets a specific restrained subtitled line ("He looks comfortable"). Overlaps/trail-offs marked.
 - **1.2** — acted on the ten festival/adjudicator critiques (see Ten Adjudicator Critiques). The midpoint tell is now the HANDSHAKE — a physical ritual planted in the cold open, performed a half-beat wrong by the likeness (legible on the page, per the Nicholl note). Added CAMILA, a named local with her own subtitled scene, and Will's one active/costly choice: he knowingly takes the apartment her family is displaced from (answers Cannes/Morelia/social-realist + Sundance "passive protagonist" notes). Planted the verification rule in Act 1 (the system stalls on the real Will's own login) so the Act-8 inversion is inevitable, not a twist (Fantastic Fest note). Last image is now JOHN, held, not the glitch (A24 note — grief over tech). Compressed the middle (merged the two apartment deposit beats). Version frozen: script v1.0 and v1.1 archived.
 - **1.1** — CUT Baxter entirely (the false-premise dog tell and its mini-putt plant) — the midpoint tell now plays on the face and eyes, no gimmick, specific memory TBD. Moved the hollow FAMILY facetime to AFTER the Cairns paradise call and the golf/mini-putt (it now motivates opening the Service). Cut "Doesn't sound too bad" from John's mini-putt line; kept "You know I've never even been out of the states?"
 - **1.0** — addressed the July 25 script notes (archived). Cold open: killed the "ONE YEAR AGO" super (one time-card only); Cairns is now the fun-dick-you-like, his cold-open line a grinning jab ("you're the best boss this company's got") not a grievance; elevator reworked to happy-for-him / low-key-jealous, no plan interrogation; no head-counts named. Office (sc 2): erosion consolidated here (coaching module folded in), the standalone lonely-apartment/vacation-days scene CUT, and Will's emptiness deepened — a hollow family call and the family home sold, everyone scattered, so the audience would take the offer too. Mini-putt: lit (no phone-light); John's line "never even been out of state"; Baxter plant delivered then Will sinks the putt, internal. Sc 4: passport/leash CUT as cliché — the push to the Service is now image (his building become other people's vacations, he's the last resident) not a device. Honeymoon: no self-advertised fraud (the party déjà vu is private, not a re-staged clip); Cairns' deflections rewritten as classic-flaky-Cairns not "just left town"; added Will actively PARTICIPATING in gentrification. Appointment (sc 8): the reason he walks in is character not coercion — he goes to REPORT it, sure he can prove which one's real, and the rig rules the model authentic and flags the live man as synthetic (his own tell turned on him). Ending: John does NOT smile — he almost catches it, then types back anyway; the "Will" message reads as a recruitment (John is the next mark), making the cycle legible.

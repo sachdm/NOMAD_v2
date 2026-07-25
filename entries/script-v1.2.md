@@ -1,6 +1,6 @@
-# NOMAD — MASTER SCRIPT
+# NOMAD — MASTER SCRIPT · v1.2 (FROZEN 2026-07-25)
 
-**Rendered from MASTER DRAFT v1.3. Do not edit — changes go to the draft; this re-renders.**
+**Archived snapshot. Frozen past version — the live script is always the latest in the master group. Do not edit.**
 
 ---
 
@@ -62,29 +62,28 @@ Later: the dashboard, a river of decisions. Will spots a fraud he's sure of. INT
 
 ## INT. OFFICE SPACE — WILL'S DESK — DAY
 
-Will's display: CAIRNS, poolside, sun, abundance. (Cairns is already an ad and doesn't know it — he prices everything.)
+Will's display: CAIRNS, poolside, sun, abundance.
 
 CAIRNS
-You wouldn't believe it, bro. Everything down here's two for one. Everything.
+You wouldn't believe it here, bro. Everything's two for one. And I'm not just talking about the food — right, ladies?
 
-He lowers his voice like it's a secret.
-
-CAIRNS (CONT'D)
-You know how long it's been since I clicked approve on anything? Since anybody checked I was — (waving it off) I don't even remember my own login, man. It's —
-
-A GIRL leans into frame, and to the other girl, in Spanish — dry, not for Cairns —
-
-GIRL
-*(subtitled)* Ten minutes and he thinks he's a local.
-
-Cairns, not understanding a word, delighted:
+TWO GIRLS
+¡Sí!
 
 CAIRNS
-See? They love it here too. Anyway — you know I'm tight with Michelle. Say the word, you're set up by Friday.
+You gotta get out here. It's life on crack. Same setup for work — but with bottomless margaritas.
 
-The girls pull him from frame.
+The girls escalate — decoration, distraction, pulling him from frame.
 
-CAIRNS (O.S.) (CONT'D)
+CAIRNS
+Anyway — you know I'm tight with Michelle. Say the word, I'll get you set up.
+
+CAIRNS
+Ladies, ladies. Plenty of papi to go around. Ladies!
+
+They drag him off.
+
+CAIRNS (O.S.)
 Love you, buddy!
 
 The screen stays on. The three run to the pool. Cairns throws one girl in. Will watches — a tinge of jealousy in it.
@@ -162,12 +161,7 @@ The ad comes true. The apartment beats the photos. The fridge is stocked with hi
 
 ## EXT. CAMILA'S BUILDING — NIGHT
 
-**Hers, not his.** Subtitled. Camila and her mother carry the last boxes down a stairwell of keypad locks and strangers' suitcases. She looks up at her own lit window — where a man she's never met is already pouring a drink.
-
-CAMILA
-*(subtitled, to her mother — flat)* He looks comfortable.
-
-They keep walking. We're in her frame, not Will's. The city looking back.
+**Hers, not his.** Subtitled. Camila and her mother carry the last boxes down a stairwell of keypad locks and strangers' suitcases. She looks up at her own lit window — where a man she's never met is already pouring a drink. She says something dry and furious and quiet to her mother. We're in her frame now, not Will's. The city looking back.
 
 ## EXT. MEXICO CITY — CONTINUOUS
 
@@ -199,9 +193,9 @@ The likeness follows. It knows the handshake. But it comes a half-beat late and 
 Four seconds of Will fully awake — his hand still up. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
 
 CAIRNS
-I love you, man.
+Love you, bro.
 
-The words are too whole. Real Cairns drops the "I," slurs it — *"love you, buddy."* This one says all of it, cleanly, a half-beat late. Will closes the laptop and sits very still in the best apartment he's ever had.
+A half-beat late. Will closes the laptop and sits very still in the best apartment he's ever had.
 
 ## INT. WILL'S CDMX APARTMENT — NIGHT — THE SCRUB
 
