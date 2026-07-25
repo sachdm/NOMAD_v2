@@ -1,6 +1,6 @@
-# NOMAD — MASTER SCRIPT
+# NOMAD — MASTER SCRIPT · v1.4 (FROZEN 2026-07-25)
 
-**Rendered from MASTER DRAFT v1.5. Do not edit — changes go to the draft; this re-renders.**
+**Archived snapshot. Frozen past version — the live script is always the latest. Do not edit. <!-- v1.5 Do not edit — changes go to the draft; this re-renders.**
 
 ---
 
@@ -42,16 +42,9 @@ Will and Cairns run their handshake. The dumb elaborate one. Fast, perfect, musc
 
 The doors close on Cairns mid-sell.
 
-A beat. John eyes Cairns' empty chair.
-
-JOHN
-I always liked that chair.
-
-He drops into it, gives it a spin. Will cracks up despite himself.
-
 ## INT. OFFICE SPACE — MOMENTS LATER
 
-The floor, back at work. Cairns' chair, still faintly spinning. On the desk, a branded welcome folder.
+The floor, back at work. Cairns' chair still spinning. On the desk, a branded welcome folder.
 
 SUPER: ONE YEAR LATER
 
@@ -121,7 +114,7 @@ Will watches. A tinge of jealousy in it.
 JOHN (O.S.)
 Is that Cairns? Nice.
 
-Will kills the tab and turns. John, holding six beers — for the two of them.
+Will kills the tab and turns. John, holding two beers.
 
 ## INT. DEAD SALES DEPARTMENT — MINI-PUTT COURSE — LATER
 
@@ -160,7 +153,7 @@ BACK TO SCENE. Face capture: look left, look right, read this aloud. Will jokes 
 COORDINATOR
 Then you know it's painless.
 
-The coordinator winks — a half-beat late.
+A half-beat late.
 
 ## INT. WILL'S CAR — PARKING LOT — CONTINUOUS
 
@@ -197,7 +190,7 @@ It's the last one.
 
 It sits there. Will promises to be back for it. Half-listening.
 
-## INT. APARTMENT, MEXICO CITY — DAY
+## INT. CDMX APARTMENT — DAY
 
 A viewing. Perfect. And not empty.
 
@@ -229,12 +222,12 @@ At a rooftop party, a flicker of familiarity — the light, the pool, the shape 
 
 He passes two locals mid-conversation, subtitled for us — about the building where the American who's never home lives. The building sits behind them, unnoticed.
 
-## INT. WILL'S APARTMENT, MEXICO CITY — NIGHT / INT. DEAD OFFICE — NIGHT — INTERCUT
+## INT. CDMX APARTMENT — NIGHT / INT. DEAD OFFICE — NIGHT — INTERCUT
 
 Will calls JOHN. Mini-putt updates from the dark floor. Will poolside, pretending he isn't lonely at a party.
 
 JOHN
-Cairns liked my bracket post. So he's in. So you better be in.
+Cairns liked my bracket post. So he's in. You're in?
 
 WILL
 Course.
@@ -242,7 +235,7 @@ Course.
 JOHN
 It's gonna be everybody.
 
-## INT. WILL'S APARTMENT, MEXICO CITY — NIGHT
+## INT. CDMX APARTMENT — NIGHT
 
 The poolside frame. Cairns, still selling, still "next week."
 
@@ -259,15 +252,13 @@ I love you, man.
 
 A half-beat late. Will closes the laptop and sits very still in the best apartment he's ever had.
 
-## INT. WILL'S APARTMENT, MEXICO CITY — NIGHT — LATER
+## INT. CDMX APARTMENT — NIGHT — LATER
 
-Desk lamp. Blue screen light. Two video windows side by side: an old real Cairns clip and a recent call, each with a timestamp overlay. Will drags them frame by frame.
+Desk lamp. Side-by-sides: years of real Cairns — birthdays, dumb ones — frame-stepped against the new calls.
 
-A call Cairns swore was "this morning" carries a UTC stamp that doesn't line up — the light's wrong, the background clock's wrong, the time zone's wrong. The laugh, isolated on a waveform: a half-second late.
+Timestamps across time zones that don't add up. The laugh, isolated and waveformed: a half-second late.
 
-Then the thing he's actually hunting for. He runs the call metadata. Every message from Cairns — every call, for months — pings the same coordinates. Will drops them on a map.
-
-One building. He has the address because he found it.
+The phone lights. One line. An address. Cairns' building.
 
 ## EXT. CAIRNS' BUILDING — DAY
 
@@ -309,8 +300,6 @@ INSERT - SCREEN
 STATUS: SYNTHETIC · RETAINED FOR REFERENCE.
 
 Behind him, a wall of numbered lockers, most tagged. One readable: a first name, a version number.
-
-An attendant peels a numbered tag from a sheet, clips it to Will's collar. Inventory now. A hand guides him, unhurried, toward a door — a specimen the model keeps to check itself against. He doesn't fight it. On paper, he isn't here.
 
 The DEAD SALES DEPARTMENT: John's phone BUZZES.
 
