@@ -649,7 +649,7 @@ async function open(idx, push = true) {
   }
   const contentEl = document.getElementById('content');
   try {
-    const res = await fetch('entries/' + e.file);
+    const res = await fetch('entries/' + e.file, { cache: 'no-store' });
     if (!res.ok) throw new Error(res.status);
     const text = await res.text();
     const cat = e.category || 'journal';
@@ -734,7 +734,7 @@ const STUDIO = new URLSearchParams(location.search).has('studio');
 (async function boot() {
   const manifest = STUDIO ? 'entries-studio.json' : 'entries.json';
   try {
-    const res = await fetch(manifest);
+    const res = await fetch(manifest, { cache: 'no-store' });
     const raw = await res.json();
     const sorted = [];
     for (const cat of GROUP_ORDER) {
