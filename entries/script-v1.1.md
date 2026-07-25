@@ -1,6 +1,6 @@
-# NOMAD — MASTER SCRIPT
+# NOMAD — MASTER SCRIPT · v1.1 (FROZEN 2026-07-25)
 
-**Rendered from MASTER DRAFT v1.2. Do not edit — changes go to the draft; this re-renders.**
+**Archived snapshot. Frozen past version — the live script is always the latest in the master group. Do not edit.**
 
 ---
 
@@ -36,7 +36,7 @@ The real boss, mid golf-sim swing, the office feed propped on a phone he isn't w
 
 Will and John flank Cairns, carrying nothing — happy for him, openly, a little jealous. Nobody interrogates the plan. Cairns brags about a SERVICE — handles everything, one fee — and can't answer a single follow-up. Nobody's grilling him; they wish it were them.
 
-Will and Cairns do their handshake — the dumb elaborate one, fast and perfect, muscle memory. The doors close on Cairns mid-sell.
+The doors close on him mid-sell.
 
 ## INT. OFFICE SPACE — MOMENTS LATER
 
@@ -55,8 +55,6 @@ A queue of faces. Machine verdicts. One button: APPROVE. Will clicks. A streak c
 A face, machine-verified 98%. Will stops. Replays three seconds — asked about his childhood, the man's eyes go nowhere. Will overrides: SYNTHETIC. The system concedes. His streak resets to zero. No one looks up.
 
 On his monitor: SYSTEM 99.1 / WILL 96.8 — TOP HUMAN PERFORMER.
-
-To log back in, Will re-verifies himself — face to the camera, look left, look right. IDENTITY: LOW CONFIDENCE — RETRY. He sighs, does it again. VERIFIED. Routine. He doesn't think about it. (The machine already doubts the real one.)
 
 Later: the dashboard, a river of decisions. Will spots a fraud he's sure of. INTERVENE. His screen dims — a coaching module auto-plays, "Trusting Your Tools," a cheerful presenter who blinks at perfectly regular intervals. In the corner, the system clears his case without him.
 
@@ -131,9 +129,15 @@ The email arrives before he's out of the lot. MICHELLE — template-warm, exclam
 
 ## INT. WILL'S APARTMENT — NIGHT
 
-Michelle's welcome preview: an automated ad starring WILL — his face, his walk, composited into Cairns' paradise. "See yourself there." He watches himself live the ad, delighted. He says his name for the personalization. Says it again, excited. Grinning.
+Michelle's welcome preview: an automated ad starring WILL — his face, his walk, composited into Cairns' paradise. "See yourself there." He watches himself live the ad, delighted.
 
-INSERT — a checkbox fills: CONFIRM MY DETAILS. For confirmation it plays his own face back to him — and for half a second his eyes look wrong. He blames the compression.
+INSERT — a checkbox fills: CONFIRM MY DETAILS.
+
+He says his name for the personalization. Says it again, excited. Grinning.
+
+## INT. WILL'S APARTMENT — LATER
+
+The tour quiz: an app films him walking the apartment, narrating furniture. For confirmation it plays his face back to him — and for half a second his own eyes look wrong. He blames the compression.
 
 ## INT. OFFICE SPACE — DAY
 
@@ -157,19 +161,13 @@ It sits there. Will promises to be back for it, half-listening.
 
 The ad comes true. The apartment beats the photos. The fridge is stocked with his exact brands. A rooftop workday; Will closes the laptop mid-refresh. No clocks anywhere.
 
-**The apartment.** A viewing. It's perfect — and it's not empty. CAMILA (20s, a life here) and her family are still boxing up the place they've lived in for years; the Service is turning the building over to arrivals. Will sees it. He understands exactly what he's looking at. The agent asks if he wants it. He takes it. His passivity becomes complicity — the one active choice he makes in the film, and it's this.
-
-## EXT. CAMILA'S BUILDING — NIGHT
-
-**Hers, not his.** Subtitled. Camila and her mother carry the last boxes down a stairwell of keypad locks and strangers' suitcases. She looks up at her own lit window — where a man she's never met is already pouring a drink. She says something dry and furious and quiet to her mother. We're in her frame now, not Will's. The city looking back.
-
-## EXT. MEXICO CITY — CONTINUOUS
-
-Will haggles a vendor down for sport, overtips elsewhere to feel generous, conducts his whole life in English and is always accommodated. Charming, oblivious.
+He moves into a beautiful apartment a local family was just pushed out of — their life half-packed by the door; he doesn't register it. He haggles a vendor down for sport, overtips elsewhere to feel generous, conducts his whole life in English and is always accommodated. Charming, oblivious — becoming the thing that pushed him out of his own city.
 
 He texts Cairns on landing. Cairns is warm, specific, flaky — "in Oaxaca for a thing, next week for SURE, I already told everyone you're here." Each dodge, classic Cairns.
 
 At a rooftop party, a flicker of familiarity — the light, the pool, the shape of the night. He shrugs it off.
+
+He passes a conversation between locals — subtitled for us, not for him — about the building where the American who's never home lives. The building sits behind them, unnoticed.
 
 ## INT. WILL'S CDMX APARTMENT / INT. DEAD OFFICE — NIGHT — INTERCUT
 
@@ -186,11 +184,11 @@ It's gonna be everybody.
 
 ## INT. WILL'S CDMX APARTMENT — NIGHT
 
-The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, raises a fist to the webcam and starts their handshake — the dumb elaborate one they've done since college, the kind muscle memory runs without thinking.
+The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, tests something only the two of them would know — a shared memory, a private detail, the kind of thing that should snap a real friend right back.
 
-The likeness follows. It knows the handshake. But it comes a half-beat late and lands one move wrong — the exact beat the real Cairns never misses. Same laugh, 0.4 off. Then it slides back into the sell without a seam.
+The answer comes back correct but hollow. Facts right, eyes going nowhere — not doing the thing eyes do when a person actually remembers. Then it slides back into the sell without a seam.
 
-Four seconds of Will fully awake — his hand still up. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
+Four seconds of Will fully awake. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
 
 CAIRNS
 Love you, bro.
@@ -251,9 +249,9 @@ John does not smile. Something crosses his face — not delight, not alarm, some
 
 Then, slowly, uncertainly, he starts to type back anyway — because he wants his friend to be real more than he wants to be right.
 
-A single frame stutters — almost too fast to catch.
+Hold on John. The putter in frame.
 
-But we do not cut on the glitch. We stay on JOHN. His face, lit by the phone, typing to a friend who is gone. Hold there — the putter reserved against hole 7 behind him — until it's unbearable.
+One frame stutters.
 
 CUT TO BLACK.
 
