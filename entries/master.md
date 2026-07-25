@@ -95,9 +95,15 @@ You wouldn't believe it, bro. Everything down here's two for one. Everything.
 
 *(lower, like a secret)* You know how long since I clicked approve on anything? Since anybody checked I was — *(waving it off)* I don't even remember my own login, man.
 
-### GIRL
+### GIRL 1
 
-*(subtitled, to the other girl, dry — not for Cairns)* Ten minutes and he thinks he's a local.
+*(in Spanish; subtitled, to the other girl — dry)* Two weeks here and he thinks he's a local.
+
+### GIRL 2
+
+*(in Spanish; subtitled)* Give him a month. He'll own the building.
+
+*(The "own the building" bite ties straight to Camila and the render-farm building — colonial obliviousness AND the gentrification theme, and it's funnier and sharper than a single line. The girls have real agency; Cairns misreads it as adoration.)*
 
 ### CAIRNS (CONT'D)
 

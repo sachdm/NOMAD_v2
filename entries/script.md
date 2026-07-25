@@ -5,6 +5,7 @@
 ---
 
 ## EXT. INFINITY POOL — GOLDEN HOUR
+WORLD: Synthetic video is now indistinguishable from real footage — except for a sub-second latency the eye learns to feel. In this world, 'paradise' is usually a render.
 
 Full frame, no context. Paradise. Water like poured glass, too perfect. A laugh on the soundtrack lands a half-beat late.
 
@@ -13,6 +14,7 @@ A single frame STUTTERS.
 MAIN TITLE: NOMAD
 
 ## INT. OFFICE SPACE — DAY
+WORLD: Offices emptied years ago. What's left runs on telepresence and automated management — a 'boss' is a warm interface over an absent one.
 
 A floor at its midpoint. Bodies among empty desks. Nobody looks up.
 
@@ -64,6 +66,7 @@ He passes dark departments. Cairns' desk, untouched, the folder gathering a year
 At 8:55 the coffee machine brews a full pot. Will pours its only cup.
 
 ## INT. OFFICE SPACE — WILL'S DESK — DAY
+WORLD: Identity verification is load-bearing infrastructure: your verified likeness IS your legal and financial self. Humans audit the machine's fraud calls — for now. It already stalls on Will's own face.
 
 A queue of faces. Machine verdicts. One button: APPROVE. Will clicks. A streak counter climbs.
 
@@ -85,6 +88,7 @@ Later. The dashboard, a river of decisions. Will spots a fraud he's sure of. INT
 His screen dims. A coaching module auto-plays — "Trusting Your Tools," a cheerful presenter who blinks at perfectly regular intervals. In the corner, the system clears his case without him.
 
 ## INT. OFFICE SPACE — WILL'S DESK — DAY
+WORLD: Post-remote, millions of Western workers went 'nomad' — chasing weak currencies and cheap living abroad, and exporting their loneliness with them.
 
 Will's display: CAIRNS, poolside, sun, abundance.
 
@@ -98,11 +102,15 @@ You know how long since I clicked approve on anything? Since anybody checked I w
 (waving it off)
 I don't even remember my own login, man.
 
-A GIRL leans into frame. To the other girl, dry, not for Cairns:
+Two GIRLS flank him. To each other, dry, not for Cairns:
 
 GIRL 1
 (in Spanish; subtitled)
-Ten minutes and he thinks he's a local.
+Two weeks here and he thinks he's a local.
+
+GIRL 2
+(in Spanish; subtitled)
+Give him a month. He'll own the building.
 
 Cairns doesn't understand a word. Delighted:
 
@@ -137,6 +145,7 @@ Then — who's Michelle? The Service was a company. Since when does it have a fi
 Will lines up a putt, sinks it, doesn't celebrate. Somewhere else entirely.
 
 ## INT. WILL'S APARTMENT — NIGHT
+WORLD: Remote work and mobile capital dissolved physical community. Family homes became listings; whole neighborhoods became short-term rentals.
 
 A facetime with family. A parent, bad connection, distracted. The call ends first from their side.
 
@@ -147,6 +156,7 @@ His building — lockboxes on every door, rolling suitcases in the hall, a diffe
 He opens the Service page. The logo he's walked past on Cairns' dead desk for a year.
 
 ## INT. SERVICE STOREFRONT — DAY
+WORLD: 'Relocation services' proliferated to move nomads abroad frictionlessly. Most are legitimate. Some are fronts for identity harvesting.
 
 An office park. The Service sits between a vape shop and a notary. Brochure rack, folding chairs, a paradise reel looping over a dying pothos.
 
@@ -167,6 +177,7 @@ The coordinator winks — a half-beat late.
 The email arrives before he's out of the lot. MICHELLE — template-warm, exclamation points, a scheduling link.
 
 ## INT. WILL'S APARTMENT — NIGHT
+WORLD: Generative advertising renders in real time and stars the viewer — the pitch is literally you, already living the life.
 
 Michelle's welcome preview: an automated ad starring WILL. His face, his walk, composited into Cairns' paradise. "See yourself there."
 
@@ -198,6 +209,7 @@ It's the last one.
 It sits there. Will promises to be back for it. Half-listening.
 
 ## INT. APARTMENT, MEXICO CITY — DAY
+WORLD: In host cities, foreign capital priced locals out at scale. Whole buildings turned over to new arrivals within weeks.
 
 A viewing. Perfect. And not empty.
 
@@ -276,6 +288,7 @@ From below. Monolithic. It fills the frame.
 He goes a day early. Cairns, finally, at a place he can walk to.
 
 ## INT. CAIRNS' BUILDING — DAY
+WORLD: Harvested likenesses run as autonomous remote workers — attending meetings, filing work — billed to firms who never notice the human is gone.
 
 Reception expects him tomorrow. Today, nobody manages what he sees. The service stairs.
 
@@ -296,6 +309,7 @@ The worst screen in the building: CAIRNS' LIKENESS on a call with WILL'S LIKENES
 Will slips out. An operator clocks him in a doorway reflection, and doesn't care.
 
 ## INT. DEAD SALES DEPARTMENT — DAY / INT. VERIFICATION ROOM — DAY — INTERCUT
+WORLD: When the reference model reads as more 'authentic' than the person, the human becomes the anomaly — the system rules for the model. And it recruits: each captured likeness lures the next. It never has to stop.
 
 In the DEAD SALES DEPARTMENT: last day. The floor half-dismantled — desks tagged, cables coiled, the coffee machine unplugged. A paper banner goes up. The bracket: one name crossed out, rewritten smaller — WILL (REMOTE?).
 
