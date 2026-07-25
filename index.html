@@ -304,8 +304,8 @@
 <script>
 const REPO = 'sachdm/nomad_v2';
 const SCRIPT_FILE = 'script.md';   // rendered on a white screenplay page with a title page
-const GROUP_ORDER = ['master', 'draft', 'dev', 'scene', 'log', 'journal', 'archive'];
-const GROUP_NAMES = { master: 'master script', draft: 'reference drafts', dev: 'development', scene: 'scenes', log: 'session logs', journal: 'journal', archive: 'archive — notebook' };
+const GROUP_ORDER = ['master', 'versions', 'draft', 'dev', 'scene', 'log', 'journal', 'archive'];
+const GROUP_NAMES = { master: 'master script', draft: 'reference drafts', dev: 'development', scene: 'scenes', log: 'session logs', journal: 'journal', archive: 'archive — notebook', versions: 'script archive (frozen)' };
 
 let entries = [];
 let current = -1;
@@ -634,7 +634,7 @@ async function open(idx, push = true) {
     const editUrl = `https://github.com/${REPO}/edit/main/entries/${e.file}`;
 
     // --- the rendered master script: white professional screenplay page + gutter notes ---
-    if (e.file === SCRIPT_FILE) {
+    if (e.file === SCRIPT_FILE || e.category === 'versions') {
       contentEl.classList.add('page-mode');
       const { html, notes } = renderScreenplay(text);
       reader.innerHTML = `
