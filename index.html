@@ -680,7 +680,7 @@ async function open(idx, push = true) {
           <div class="notes-layer"></div>
         </div>`;
       contentEl.scrollTop = 0;
-      requestAnimationFrame(() => initScriptTools(reader, notes, worldNotes));
+      setTimeout(() => initScriptTools(reader, notes, worldNotes), 30);
       return;
     }
 
