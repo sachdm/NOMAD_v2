@@ -1,15 +1,21 @@
 [
   {
     "date": "2026-07-25",
-    "title": "NOMAD \u2014 MASTER SCRIPT (rendered from v1.4)",
+    "title": "NOMAD \u2014 MASTER SCRIPT (rendered from v1.5)",
     "file": "script.md",
     "category": "master"
   },
   {
     "date": "2026-07-25",
-    "title": "NOMAD \u2014 MASTER DRAFT (v1.4)",
+    "title": "NOMAD \u2014 MASTER DRAFT (v1.5)",
     "file": "master.md",
     "category": "master"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Script v1.4 (frozen 2026-07-25)",
+    "file": "script-v1.4.md",
+    "category": "versions"
   },
   {
     "date": "2026-07-25",
