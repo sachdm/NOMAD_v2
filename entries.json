@@ -1,15 +1,21 @@
 [
   {
     "date": "2026-07-25",
-    "title": "NOMAD \u2014 MASTER SCRIPT (rendered from v1.3)",
+    "title": "NOMAD \u2014 MASTER SCRIPT (rendered from v1.4)",
     "file": "script.md",
     "category": "master"
   },
   {
     "date": "2026-07-25",
-    "title": "NOMAD \u2014 MASTER DRAFT (v1.3)",
+    "title": "NOMAD \u2014 MASTER DRAFT (v1.4)",
     "file": "master.md",
     "category": "master"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Script v1.3 (frozen 2026-07-25)",
+    "file": "script-v1.3.md",
+    "category": "versions"
   },
   {
     "date": "2026-07-25",
@@ -46,6 +52,12 @@
     "title": "Act One \u2014 Working Script v0.2",
     "file": "act-1.md",
     "category": "draft"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Ten Critiques on Format",
+    "file": "dev-format-ten.md",
+    "category": "dev"
   },
   {
     "date": "2026-07-25",
