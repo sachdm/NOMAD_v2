@@ -2,7 +2,7 @@
 
 **This is the script. If it isn't in here, it isn't in the film.** Everything else on this site is development history or reference. All changes land here first; the changelog at the bottom tracks every revision.
 
-**Current version: 1.0** · The Short · prologue + 9 scenes (4A/4B/6B; 8+9 intercut) · ~18–20 min · improv format (action + motivation); scripted dialogue at the call (sc 3), cold-open jab, the putter, the John call, and the midpoint tell.
+**Current version: 1.1** · The Short · prologue + 9 scenes (4A/4B/6B; 8+9 intercut) · ~18–20 min · improv format (action + motivation); scripted dialogue at the call (sc 3), cold-open jab, the putter, and the John call. The midpoint tell plays on the face — no dialogue.
 
 ---
 
@@ -16,7 +16,7 @@
 4. He's quietly optimized out of his own building (the last resident on a street of lockboxes). WFHs unnoticed. That night he opens the Service page from Cairns' dead desk — and walks into its dingy strip-mall intake. First captures happen there. Michelle arrives afterward as a chirpy coordinator email.
 5. **(4B)** The deposits continue: the welcome ad starring Will, the tour quiz. Every biometric surrendered smiling. Floor-closing announced → John declares the last-day championship and takes Will's promise (the putter).
 6. Mexico: the ad comes true — and Will actively participates in the gentrification he fled. He keeps trying to see Cairns; Cairns keeps flaking (classic Cairns). A call with John confirms the postponements don't add up ("he liked my bracket post yesterday").
-7. **(Midpoint)** The tell — the Baxter false-premise comes back correct but hollow, then pivots into the sell. Will flags his best friend as synthetic and can't un-see it.
+7. **(Midpoint)** The tell — Will tests a shared memory only the two of them hold; the answer is correct but hollow, eyes going nowhere, then slides back into the sell. Will flags his best friend as synthetic and can't un-see it. Played on the face, no gimmick.
 8. **(The scrub)** Will turns fraud-ops on his best friend — side-by-sides, timestamps, the laugh waveformed at 0.4. Same method as scene 2, same verdict. Mid-scrub, a one-line message: an address. Cairns' building.
 9. He goes to the building drawn by the one thing that ever moved him — Cairns, finally reachable — and finds the render farm: paradise generated, his own ad mid-refinement, and the devastation by sound: his own laugh, then the screen — his likeness and Cairns' on a call together, the friendship automated without either of them.
 10. **(The double ritual, intercut)** He doesn't run — he goes to REPORT it, sure a verification expert can prove which one's real. The rig rules the model authentic and flags the live man as synthetic: his own tell, turned on him. Intercut with championship day — door/decision on one side, John's banner on the other. **Will is captured — kept as the reference the model checks itself against.** The "Will" message reaches John: not a goodbye, a recruitment — come out HERE. John almost catches the wrongness, doesn't, starts to type back beside Will's reserved putter. One frame stutters. Black.
@@ -75,7 +75,7 @@ His job in one image: a queue of faces, machine verdicts, one button — APPROVE
 
 **Will:** the four seconds of the catch are the only time today he is fully awake. The zeroed streak is the system fining him for being right.
 
-**Why we care about Will — the emptiness, shown not stated (addresses "why do we care / would the audience make the same choice"):** thread it through the workday and the call, NOT a separate montage. A facetime with FAMILY that's as hollow as everything else — a parent or sibling on a bad connection from wherever they scattered to, distracted, "gotta go," the call ending first from their side. And the family thread that raises the stakes: the family HOME is being emptied/sold because everyone left — Will is the last one anywhere, the last at the office, the last in the family, the last on his own street. He has nothing to leave because everything already left him. THAT is why the audience would take the offer too. Keep it efficient and un-corny — one cold family call, one line about the house going.
+**Why we care about Will — the emptiness, shown not stated (addresses "why do we care / would the audience make the same choice"):** PLACEMENT (per notes) — the hollow FAMILY facetime lands AFTER the Cairns paradise call and AFTER the golf/mini-putt, back at his apartment that same night. The order matters: he watches Cairns' impossible paradise, hangs with John, then comes home to a real call with real family that is somehow emptier than the fake one — a parent on a bad connection, distracted, "gotta go," hanging up first. And the family HOME is a listing he scrolls past: everyone scattered, the last shared address turned into photos with a price. Will is the last one anywhere — last at the office, last in the family, last real resident on his floor. He has nothing to leave because everything already left him. Alone with all of it, THAT is the night he opens the Service page. Keep it efficient and un-corny — one cold family call, one glimpsed listing.
 
 **Camera:** the audience learns the tell here at desktop scale so scene 6 can pay it at cinema scale.
 
@@ -139,7 +139,7 @@ They let that sit.
 
 **The Michelle setup (improvised, this is where she enters the film):** somewhere over the putters, John asks the obvious thing — da fuq is Michelle? The Service was a *company*; since when does it have a first name that's "tight" with Cairns? Will opens his mouth and realizes he has no idea. They shrug it off — Cairns knows everybody. The audience should file it the way they do: trivia. This is the FIRST time Michelle exists in the film, and she arrives as a person-shaped hole in a corporate pipeline.
 
-**The Baxter plant (do this quietly, here or at Will's desk):** somewhere the dog gets named for real — a photo on Will's desk of a younger Will and Cairns with a mutt, or Will mentions "back when I had Baxter." Establish, once and gently, that BAXTER WAS WILL'S DOG. Never underline it. It's the tripwire the midpoint tell steps on.
+*(No Baxter / no false-premise dog — cut per notes. The midpoint tell plays on the face, not on a planted trick; see scene 6.)*
 
 **Direction (girls):** their reactions land a half-beat off Cairns' rhythm. Never explained.
 
@@ -216,14 +216,7 @@ The ad comes true. The fridge stocked with his exact brands — data leakage wea
 
 **Camera:** the screen grows until Cairns' face fills the frame. The audience does fraud-ops at cinema scale. The tell must play silent on a 40-foot screen.
 
-Same poolside frame as ever. Cairns still selling, still "next week bro." Will, easy and warm, tries a private memory — and plants a false detail in it. The model swallows the false frame and answers with its warm template, then pivots straight back into the sell:
-
-> WILL: You remember Baxter? Your mom's dog.
-> CAIRNS: Baxter. Best dog ever.
-> WILL: He was mine.
-> CAIRNS: Course he was. — Hey, you booked the flight yet? You gotta get down here, man.
-
-The real Cairns would have said *that was your dog, idiot.* Instead the likeness repeats "best dog ever" and turns it into a pitch — that repetition, and the pivot, ARE the tell. Facts right, memory hollow. (Baxter was planted quietly back at the mini-putt; even unplanted, "he was mine" makes the wrongness land.)
+Same poolside frame as ever. Cairns still selling, still "next week bro." Will, easy and warm, tests something only the two of them would know — a shared memory, a private detail, the kind that should snap a real friend right back. The answer comes back CORRECT BUT HOLLOW: facts right, eyes going nowhere — not doing the thing eyes do when a person actually remembers — then it slides back into the sell without a seam. No false-premise trick, no dog; the wrongness lives entirely in the delivery and the eyes, and it has to play silent on a 40-foot screen. *(Open: the specific memory Will reaches for is TBD — keep it wordless enough that the tell is the performance, not a clever line.)*
 
 Four seconds of Will fully awake — the desk catch, replayed on his best friend. And then — this is the scene — the call does NOT end. It continues, pleasantly, for a full further beat: Will performing normalcy inside the frame with the thing wearing his friend, managing a warm goodnight, and getting *love you bro* back — 0.4 late. He closes the laptop and sits very still in the best apartment he's ever had. The horror is that nothing happens.
 
@@ -289,6 +282,7 @@ Cairns: two calibrated performances a half-degree apart — the terrified man un
 
 ## Changelog
 
+- **1.1** — CUT Baxter entirely (the false-premise dog tell and its mini-putt plant) — the midpoint tell now plays on the face and eyes, no gimmick, specific memory TBD. Moved the hollow FAMILY facetime to AFTER the Cairns paradise call and the golf/mini-putt (it now motivates opening the Service). Cut "Doesn't sound too bad" from John's mini-putt line; kept "You know I've never even been out of the states?"
 - **1.0** — addressed the July 25 script notes (archived). Cold open: killed the "ONE YEAR AGO" super (one time-card only); Cairns is now the fun-dick-you-like, his cold-open line a grinning jab ("you're the best boss this company's got") not a grievance; elevator reworked to happy-for-him / low-key-jealous, no plan interrogation; no head-counts named. Office (sc 2): erosion consolidated here (coaching module folded in), the standalone lonely-apartment/vacation-days scene CUT, and Will's emptiness deepened — a hollow family call and the family home sold, everyone scattered, so the audience would take the offer too. Mini-putt: lit (no phone-light); John's line "never even been out of state"; Baxter plant delivered then Will sinks the putt, internal. Sc 4: passport/leash CUT as cliché — the push to the Service is now image (his building become other people's vacations, he's the last resident) not a device. Honeymoon: no self-advertised fraud (the party déjà vu is private, not a re-staged clip); Cairns' deflections rewritten as classic-flaky-Cairns not "just left town"; added Will actively PARTICIPATING in gentrification. Appointment (sc 8): the reason he walks in is character not coercion — he goes to REPORT it, sure he can prove which one's real, and the rig rules the model authentic and flags the live man as synthetic (his own tell turned on him). Ending: John does NOT smile — he almost catches it, then types back anyway; the "Will" message reads as a recruitment (John is the next mark), making the cycle legible.
 
 - **0.9** — folded in the dialogue pass (see Dialogue — First Pass): the midpoint tell is now spoken via the Baxter false-premise ("He was mine." / "Course he was.") pivoting into the sell; planted Baxter as Will's dog earlier; the putter beat turns ("It's a putt-putt bracket, John." / "It's the last one."); the Mexico John call rebuilt on total faith ("It's gonna be everybody."). Endings/render-farm/handover kept deliberately silent.

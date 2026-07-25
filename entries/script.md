@@ -1,6 +1,6 @@
 # NOMAD — MASTER SCRIPT
 
-**Rendered from MASTER DRAFT v1.0. Do not edit — changes go to the draft; this re-renders.**
+**Rendered from MASTER DRAFT v1.1. Do not edit — changes go to the draft; this re-renders.**
 
 ---
 
@@ -58,12 +58,6 @@ On his monitor: SYSTEM 99.1 / WILL 96.8 — TOP HUMAN PERFORMER.
 
 Later: the dashboard, a river of decisions. Will spots a fraud he's sure of. INTERVENE. His screen dims — a coaching module auto-plays, "Trusting Your Tools," a cheerful presenter who blinks at perfectly regular intervals. In the corner, the system clears his case without him.
 
-## INT. WILL'S APARTMENT — NIGHT
-
-A facetime with family — a parent, bad connection, distracted, the call ending first from their side. On his laptop, a real-estate listing: the family home, everyone scattered, the last shared address turned into photos with a price. He scrolls past it.
-
-His building: lockboxes on every door, rolling suitcases in the hall, a different set of strangers each weekend. He's the last person who actually lives on his floor.
-
 ## INT. OFFICE SPACE — WILL'S DESK — DAY
 
 Will's display: CAIRNS, poolside, sun, abundance.
@@ -102,20 +96,19 @@ Will kills the tab and turns. John, holding two beers.
 The lights are on. Hole 7 uses the old CEO's office door as a ramp.
 
 JOHN
-Doesn't sound too bad. You know I've never even been out of state?
+You know I've never even been out of the states?
 
 They let it sit. Then — who's Michelle? The Service was a company; since when does it have a first name? Neither of them knows. They shrug it off.
 
-Will lines up a putt. On the wall behind him, a photo: a younger Will and Cairns, a mutt between them.
-
-WILL
-Back when I had Baxter, I could've made this shot.
-
-He sinks it. Doesn't celebrate. Just looks at it — somewhere else.
+Will lines up a putt, sinks it, doesn't celebrate — somewhere else entirely.
 
 ## INT. WILL'S APARTMENT — NIGHT
 
-Will opens the Service page — the logo he's walked past on Cairns' dead desk for a year.
+A facetime with family — a parent, bad connection, distracted, the call ending first from their side. On his laptop, a real-estate listing: the family home, everyone scattered, the last shared address turned into photos with a price. He scrolls past it.
+
+His building: lockboxes on every door, rolling suitcases in the hall, a different set of strangers each weekend. He's the last person who actually lives on his floor.
+
+Alone with all of it, he opens the Service page — the logo he's walked past on Cairns' dead desk for a year.
 
 ## INT. SERVICE STOREFRONT — DAY
 
@@ -191,21 +184,11 @@ It's gonna be everybody.
 
 ## INT. WILL'S CDMX APARTMENT — NIGHT
 
-The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, tries a private memory — and slips a false detail into it.
+The poolside frame. Cairns, still selling, still "next week." Will, easy and warm, tests something only the two of them would know — a shared memory, a private detail, the kind of thing that should snap a real friend right back.
 
-WILL
-You remember Baxter? Your mom's dog.
+The answer comes back correct but hollow. Facts right, eyes going nowhere — not doing the thing eyes do when a person actually remembers. Then it slides back into the sell without a seam.
 
-CAIRNS
-Baxter. Best dog ever.
-
-WILL
-He was mine.
-
-CAIRNS
-Course he was. — Hey, you booked the flight yet? You gotta get down here, man.
-
-Facts right. Memory hollow. Four seconds of Will fully awake. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
+Four seconds of Will fully awake. And the call does not end. It goes on, pleasantly — Will performing normalcy, managing a goodnight.
 
 CAIRNS
 Love you, bro.
