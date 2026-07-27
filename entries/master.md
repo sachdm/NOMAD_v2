@@ -208,6 +208,8 @@ The ad comes true. The fridge stocked with his exact brands — data leakage wea
 
 **Will PARTICIPATING in the gentrification:** beyond the apartment — he haggles a vendor down for sport, overtips elsewhere to feel generous, lives entirely in English and is always accommodated. Charming, likable, oblivious. The audience likes him AND sees exactly what he's doing.
 
+**CAIRNS ON THE STREET — the tongue (new, at the tail end of the gentrification block):** Will passes a homeless man on the curb — gaunt, mouth working, no sound. It's the REAL Cairns. His tongue is cut out: the model harvested his voice, and the original was discarded, silenced so he can never warn or name the thing. He reaches toward the street, not quite toward Will; Will steps around him, phone up, gone — doesn't recognize the friend he crossed a country for. This is the brutal answer to "what happens to the discarded originals," and it foreshadows Will's own end. Play it spare and silent — no gore, the horror is the silence and Will not seeing him. (Reconciles with the reference-retention rule: some originals are kept for calibration, some are used up and dumped; Cairns is dumped.)
+
 **The plant (once, cleanly):** he passes one subtitled local conversation — the building where "the American who's never home" lives. Subtitles for us. Weather for him.
 
 **Sound:** Mexico City full-spectrum and alive against the office's dead air.
