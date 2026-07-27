@@ -106,6 +106,14 @@
   }
   #sidebar-foot a { color: var(--cyan); text-decoration: none; }
   #sidebar-foot a:hover { text-decoration: underline; }
+  #unlock {
+    width: 100%; box-sizing: border-box;
+    background: var(--bg); border: 1px solid #1e2a20; border-radius: 4px;
+    color: var(--fg); font-family: inherit; font-size: 11px;
+    padding: 6px 8px; outline: none;
+  }
+  #unlock:focus { border-color: var(--green); }
+  #unlock::placeholder { color: var(--dim); }
 
   /* ---------- reader ---------- */
   #meta {
@@ -185,17 +193,17 @@
     padding: 76px 84px 92px;
     box-shadow: 0 6px 30px rgba(0,0,0,.5);
   }
-  /* --- title page --- */
+  /* --- title page: a full page of its own --- */
   .page .titlepage {
-    min-height: 74vh;
+    min-height: 780px;                 /* full US-Letter feel at this width */
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; position: relative;
   }
-  .page .titlepage .logo { width: 150px; height: auto; margin-bottom: 40px; }
-  .page .titlepage .t { font-size: 22px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 34px; }
-  .page .titlepage .by { margin: 3px 0; }
-  .page .titlepage .contact { position: absolute; bottom: 0; right: 0; font-size: 12.5px; color: #222; text-align: right; }
-  .page .titlepage + .sp-body { border-top: 1px dashed #ccc; padding-top: 44px; margin-top: 44px; }
+  .page .titlepage .logo { width: 120px; height: auto; margin-bottom: 46px; }
+  .page .titlepage .t { font-size: 24px; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 40px; }
+  .page .titlepage .by { margin: 3px 0; color: #333; }
+  .page .titlepage .contact { position: absolute; bottom: 8px; right: 0; font-size: 12px; color: #333; text-align: right; line-height: 1.5; }
+  .page .titlepage + .sp-body { margin-top: 40px; }
 
   /* --- screenplay elements (professional indents, Courier) --- */
   .sp-slug   { text-transform: uppercase; font-weight: bold; margin: 26px 0 12px; }
@@ -256,6 +264,27 @@
     .note-card { position: static !important; width: auto; margin: 6px 0; }
   }
 
+  /* ---------- PRINT / PDF ---------- */
+  @media print {
+    @page { margin: 1in 1in 1in 1.4in; }
+    @page { @bottom-right { content: counter(page) "."; font-family: "Courier New", monospace; font-size: 10pt; color: #000; } }
+    html, body { background: #fff !important; }
+    body::after { display: none !important; }
+    #sidebar, .sp-toolbar { display: none !important; }
+    #app, #content, #reader { display: block !important; height: auto !important; overflow: visible !important; }
+    #content { padding: 0 !important; background: #fff !important; }
+    .page-wrap { max-width: none !important; margin: 0 !important; position: static !important; }
+    .page {
+      width: auto !important; margin: 0 !important; padding: 0 !important;
+      box-shadow: none !important; color: #000 !important; font-size: 12pt !important; line-height: 1.4 !important;
+    }
+    .page .titlepage { min-height: 0; height: 8.5in; page-break-after: always; justify-content: center; }
+    .page .titlepage + .sp-body { margin-top: 0; }
+    .page .dialog { page-break-inside: avoid; }
+    .page .sp-slug { page-break-after: avoid; }
+    .notes-layer { display: none !important; }
+  }
+
   /* PRESENT / share mode — only the master script, viewers can comment */
   body.present #sidebar { display: none; }
   body.present #content { padding-top: 0; }
@@ -298,8 +327,8 @@
     </div>
     <div id="nav"></div>
     <div id="sidebar-foot">
-      <div><kbd>j</kbd>/<kbd>k</kbd> next/prev · <kbd>/</kbd> search</div>
-      <div style="margin-top:4px"><a id="new-entry-link" target="_blank" rel="noopener">+ new entry</a> · <a id="repo-link" target="_blank" rel="noopener">repo</a></div>
+      <div id="lockrow"><input id="unlock" type="password" placeholder="password → full archive" autocomplete="off"></div>
+      <div id="unlocked-note" style="display:none;color:var(--green)">✓ archive unlocked</div>
     </div>
   </div>
   <div id="content">
@@ -324,8 +353,9 @@ const nav = document.getElementById('nav');
 const reader = document.getElementById('reader');
 const search = document.getElementById('search');
 
-document.getElementById('repo-link').href = `https://github.com/${REPO}`;
-document.getElementById('new-entry-link').href = `https://github.com/${REPO}/new/main/entries`;
+// --- password gate: full archive is hidden until unlocked ---
+const ARCHIVE_PASSWORD = 'bluesheep';   // change this string to change the password
+let archiveUnlocked = false;
 
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
@@ -661,10 +691,7 @@ async function open(idx, push = true) {
       const { html, notes, worldNotes } = renderScreenplay(text);
       reader.innerHTML = `
         <div class="sp-toolbar">
-          <button id="tb-comment" class="comment">💬 Comment</button>
-          <button id="tb-edit">✎ Edit</button>
-          <button id="tb-download">⭳ Download .md</button>
-          <span id="tb-status"></span>
+          <button id="tb-pdf">⭳ Download PDF</button>
         </div>
         <div class="page-wrap">
           <div class="page">
@@ -677,10 +704,10 @@ async function open(idx, push = true) {
             </div>
             <div class="sp-body" id="sp-body">${html}</div>
           </div>
-          <div class="notes-layer"></div>
         </div>`;
       contentEl.scrollTop = 0;
-      setTimeout(() => initScriptTools(reader, notes, worldNotes), 30);
+      const pdfBtn = reader.querySelector('#tb-pdf');
+      if (pdfBtn) pdfBtn.onclick = () => window.print();
       return;
     }
 
@@ -726,39 +753,43 @@ nav.addEventListener('click', ev => {
   open(parseInt(item.dataset.idx, 10));
 });
 
-// STUDIO vs PRESENT (share) mode.
-// Default (plain link, what you send out): PRESENT — only the master script, sidebar hidden, comments on.
-// ?studio : full workspace (all drafts, dev notes, archive, versions).
-const STUDIO = new URLSearchParams(location.search).has('studio');
+async function loadManifest(file) {
+  const raw = await fetch(file, { cache: 'no-store' }).then(r => r.json());
+  const sorted = [];
+  for (const cat of GROUP_ORDER)
+    sorted.push(...raw.filter(e => (e.category || 'journal') === cat).sort((a, b) => b.date.localeCompare(a.date)));
+  sorted.push(...raw.filter(e => !GROUP_ORDER.includes(e.category || 'journal')));
+  return sorted;
+}
+
+// password field: unlock the full archive
+const unlockInput = document.getElementById('unlock');
+unlockInput.addEventListener('keydown', async ev => {
+  if (ev.key !== 'Enter') return;
+  if (unlockInput.value !== ARCHIVE_PASSWORD) { unlockInput.value = ''; unlockInput.placeholder = 'wrong — try again'; return; }
+  archiveUnlocked = true;
+  document.getElementById('lockrow').style.display = 'none';
+  document.getElementById('unlocked-note').style.display = 'block';
+  const cur = entries[current];
+  entries = await loadManifest('entries-studio.json');
+  current = cur ? entries.findIndex(e => e.file === cur.file) : -1;
+  buildSidebar(search.value);
+});
 
 (async function boot() {
-  const manifest = STUDIO ? 'entries-studio.json' : 'entries.json';
   try {
-    const res = await fetch(manifest, { cache: 'no-store' });
-    const raw = await res.json();
-    const sorted = [];
-    for (const cat of GROUP_ORDER) {
-      sorted.push(...raw.filter(e => (e.category || 'journal') === cat)
-        .sort((a, b) => b.date.localeCompare(a.date)));
-    }
-    sorted.push(...raw.filter(e => !GROUP_ORDER.includes(e.category || 'journal')));
-    entries = sorted;
-
-    if (!STUDIO) {
-      // PRESENT MODE: lock to the master script, hide the workspace chrome.
-      document.body.classList.add('present');
-      const idx = entries.findIndex(e => e.file === SCRIPT_FILE);
-      open(idx >= 0 ? idx : 0, false);
-      return;
-    }
-
+    // default: only the master script + summary are listed. Password reveals the rest.
+    entries = await loadManifest('entries.json');
     buildSidebar();
     const slug = decodeURIComponent(location.hash.slice(1));
     const idx = entries.findIndex(e => slugOf(e) === slug || e.date === slug);
     if (idx >= 0) open(idx, false);
-    else if (entries.length) open(0, false);
+    else {
+      const s = entries.findIndex(e => e.file === SCRIPT_FILE);
+      open(s >= 0 ? s : 0, false);
+    }
   } catch {
-    reader.innerHTML = `<div style="color:var(--red)">couldn't load ${manifest} — if opened as a local file, run:<br><span style="color:var(--dim)">python3 -m http.server</span></div>`;
+    reader.innerHTML = `<div style="color:var(--red)">couldn't load entries.json — if opened as a local file, run:<br><span style="color:var(--dim)">python3 -m http.server</span></div>`;
   }
 })();
 </script>

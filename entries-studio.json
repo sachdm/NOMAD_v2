@@ -13,6 +13,12 @@
   },
   {
     "date": "2026-07-25",
+    "title": "NOMAD \u2014 Summary / Overview",
+    "file": "summary.md",
+    "category": "master"
+  },
+  {
+    "date": "2026-07-25",
     "title": "Script v1.4 (frozen 2026-07-25)",
     "file": "script-v1.4.md",
     "category": "versions"
